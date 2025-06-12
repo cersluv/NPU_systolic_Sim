@@ -1,0 +1,92 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/Yoshantt/Documents/Felipe/TEC/7mo Semestre/Arquitectura de Computadores II/Proyecto2/simulation/modelsim
+vPE
+Z1 DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
+!s110 1749690488
+!i10b 1
+!s100 HSKi8mW[Rf;jizFklj:ii0
+Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
+IXhTUSK]l<d=F39RN5]N4o2
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+S1
+R0
+w1749684936
+8C:/Users/Yoshantt/Documents/Felipe/TEC/7mo Semestre/Arquitectura de Computadores II/Proyecto2/PE.sv
+FC:/Users/Yoshantt/Documents/Felipe/TEC/7mo Semestre/Arquitectura de Computadores II/Proyecto2/PE.sv
+!i122 0
+L0 6 52
+Z4 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z5 !s108 1749690488.000000
+!s107 C:/Users/Yoshantt/Documents/Felipe/TEC/7mo Semestre/Arquitectura de Computadores II/Proyecto2/PE.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Yoshantt/Documents/Felipe/TEC/7mo Semestre/Arquitectura de Computadores II/Proyecto2|C:/Users/Yoshantt/Documents/Felipe/TEC/7mo Semestre/Arquitectura de Computadores II/Proyecto2/PE.sv|
+!i113 1
+Z6 o-sv -work work
+Z7 !s92 -sv -work work {+incdir+C:/Users/Yoshantt/Documents/Felipe/TEC/7mo Semestre/Arquitectura de Computadores II/Proyecto2}
+Z8 tCvgOpt 0
+n@p@e
+vSystolicArray4x4
+R1
+Z9 !s110 1749690489
+!i10b 1
+!s100 ohXHAX]Ck1]Taa9Rb=5f61
+R2
+IkZ5<_19bT0:18z_]oU7:g3
+R3
+S1
+R0
+w1749688772
+8C:/Users/Yoshantt/Documents/Felipe/TEC/7mo Semestre/Arquitectura de Computadores II/Proyecto2/SystolicArray4x4.sv
+FC:/Users/Yoshantt/Documents/Felipe/TEC/7mo Semestre/Arquitectura de Computadores II/Proyecto2/SystolicArray4x4.sv
+!i122 1
+L0 6 49
+R4
+r1
+!s85 0
+31
+R5
+!s107 C:/Users/Yoshantt/Documents/Felipe/TEC/7mo Semestre/Arquitectura de Computadores II/Proyecto2/SystolicArray4x4.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Yoshantt/Documents/Felipe/TEC/7mo Semestre/Arquitectura de Computadores II/Proyecto2|C:/Users/Yoshantt/Documents/Felipe/TEC/7mo Semestre/Arquitectura de Computadores II/Proyecto2/SystolicArray4x4.sv|
+!i113 1
+R6
+R7
+R8
+n@systolic@array4x4
+vtb_SystolicArray4x4
+R1
+R9
+!i10b 1
+!s100 ]nU_>c_oEMVcXzN?oODUM0
+R2
+I<I9YAnm:;M@1Da3f>HQEk0
+R3
+S1
+R0
+w1749690295
+8C:/Users/Yoshantt/Documents/Felipe/TEC/7mo Semestre/Arquitectura de Computadores II/Proyecto2/tb_SystolicArray4x4.sv
+FC:/Users/Yoshantt/Documents/Felipe/TEC/7mo Semestre/Arquitectura de Computadores II/Proyecto2/tb_SystolicArray4x4.sv
+!i122 2
+L0 4 100
+R4
+r1
+!s85 0
+31
+!s108 1749690489.000000
+!s107 C:/Users/Yoshantt/Documents/Felipe/TEC/7mo Semestre/Arquitectura de Computadores II/Proyecto2/tb_SystolicArray4x4.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Yoshantt/Documents/Felipe/TEC/7mo Semestre/Arquitectura de Computadores II/Proyecto2|C:/Users/Yoshantt/Documents/Felipe/TEC/7mo Semestre/Arquitectura de Computadores II/Proyecto2/tb_SystolicArray4x4.sv|
+!i113 1
+R6
+R7
+R8
+ntb_@systolic@array4x4

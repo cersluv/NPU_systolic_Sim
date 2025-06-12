@@ -1,0 +1,73 @@
+# Reading pref.tcl
+# do Proyecto2_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work rtl_work 
+# Copying C:/intelFPGA/20.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -sv -work work +incdir+C:/Users/Yoshantt/Documents/Felipe/TEC/7mo\ Semestre/Arquitectura\ de\ Computadores\ II/Proyecto2 {C:/Users/Yoshantt/Documents/Felipe/TEC/7mo Semestre/Arquitectura de Computadores II/Proyecto2/PE.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 19:08:08 on Jun 11,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Yoshantt/Documents/Felipe/TEC/7mo Semestre/Arquitectura de Computadores II/Proyecto2" C:/Users/Yoshantt/Documents/Felipe/TEC/7mo Semestre/Arquitectura de Computadores II/Proyecto2/PE.sv 
+# -- Compiling module PE
+# 
+# Top level modules:
+# 	PE
+# End time: 19:08:08 on Jun 11,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/Yoshantt/Documents/Felipe/TEC/7mo\ Semestre/Arquitectura\ de\ Computadores\ II/Proyecto2 {C:/Users/Yoshantt/Documents/Felipe/TEC/7mo Semestre/Arquitectura de Computadores II/Proyecto2/SystolicArray4x4.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 19:08:08 on Jun 11,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Yoshantt/Documents/Felipe/TEC/7mo Semestre/Arquitectura de Computadores II/Proyecto2" C:/Users/Yoshantt/Documents/Felipe/TEC/7mo Semestre/Arquitectura de Computadores II/Proyecto2/SystolicArray4x4.sv 
+# -- Compiling module SystolicArray4x4
+# ** Warning: C:/Users/Yoshantt/Documents/Felipe/TEC/7mo Semestre/Arquitectura de Computadores II/Proyecto2/SystolicArray4x4.sv(13): (vlog-13314) Defaulting port 'injectA' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
+# ** Warning: C:/Users/Yoshantt/Documents/Felipe/TEC/7mo Semestre/Arquitectura de Computadores II/Proyecto2/SystolicArray4x4.sv(14): (vlog-13314) Defaulting port 'injectB' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
+# 
+# Top level modules:
+# 	SystolicArray4x4
+# End time: 19:08:09 on Jun 11,2025, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 2
+# 
+# vlog -sv -work work +incdir+C:/Users/Yoshantt/Documents/Felipe/TEC/7mo\ Semestre/Arquitectura\ de\ Computadores\ II/Proyecto2 {C:/Users/Yoshantt/Documents/Felipe/TEC/7mo Semestre/Arquitectura de Computadores II/Proyecto2/tb_SystolicArray4x4.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 19:08:09 on Jun 11,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Yoshantt/Documents/Felipe/TEC/7mo Semestre/Arquitectura de Computadores II/Proyecto2" C:/Users/Yoshantt/Documents/Felipe/TEC/7mo Semestre/Arquitectura de Computadores II/Proyecto2/tb_SystolicArray4x4.sv 
+# -- Compiling module tb_SystolicArray4x4
+# 
+# Top level modules:
+# 	tb_SystolicArray4x4
+# End time: 19:08:09 on Jun 11,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs="+acc"  tb_SystolicArray4x4
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs=""+acc"" tb_SystolicArray4x4 
+# Start time: 19:08:09 on Jun 11,2025
+# Loading sv_std.std
+# Loading work.tb_SystolicArray4x4
+# Loading work.SystolicArray4x4
+# Loading work.PE
+# 
+# add wave *
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: Yoshantt  Hostname: DESKTOP-VJFK62D  ProcessID: 20200
+#           Attempting to use alternate WLF file "./wlft48wscb".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlft48wscb
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# [15000] Released reset
+# SystolicArray4x4 test PASSED: all results match expected AxB.
+# ** Note: $finish    : C:/Users/Yoshantt/Documents/Felipe/TEC/7mo Semestre/Arquitectura de Computadores II/Proyecto2/tb_SystolicArray4x4.sv(100)
+#    Time: 135 ns  Iteration: 1  Instance: /tb_SystolicArray4x4
+# 1
+# Break in Module tb_SystolicArray4x4 at C:/Users/Yoshantt/Documents/Felipe/TEC/7mo Semestre/Arquitectura de Computadores II/Proyecto2/tb_SystolicArray4x4.sv line 100
+# End time: 19:14:11 on Jun 11,2025, Elapsed time: 0:06:02
+# Errors: 0, Warnings: 2

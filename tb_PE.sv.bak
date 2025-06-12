@@ -1,0 +1,42 @@
+module PE #(
+    parameter W_A = 16,
+    parameter W_P = 32
+)(
+    input  logic                clk,
+    input  logic                rst_n,
+    // entrada nueva inyectada solo en fila 0 / col 0:
+    input  logic signed [W_A-1:0]  in_a,
+    input  logic signed [W_A-1:0]  in_b,
+    // datos shift-in de vecinos
+    input  logic signed [W_A-1:0]  shift_a_in,
+    input  logic signed [W_A-1:0]  shift_b_in,
+    // salidas para vecinos
+    output logic signed [W_A-1:0]  shift_a_out,
+    output logic signed [W_A-1:0]  shift_b_out,
+    // acumulador de salida final
+    output logic signed [W_P-1:0]  psum_out
+);
+
+    logic signed [W_A-1:0] a_reg, b_reg;
+    logic signed [W_P-1:0] psum_reg;
+
+    always_ff @(posedge clk or negedge rst_n) begin
+        if (!rst_n) begin
+            a_reg    <= '0;
+            b_reg    <= '0;
+            psum_reg <= '0;
+        end else begin
+            // inyección o shift
+            a_reg <= (injection_condition) ? in_a : shift_a_in;
+            b_reg <= (injection_condition) ? in_b : shift_b_in;
+            // MAC
+            psum_reg <= psum_reg + a_reg * b_reg;
+        end
+    end
+
+    // conectar a los vecinos
+    assign shift_a_out = a_reg;
+    assign shift_b_out = b_reg;
+    assign psum_out    = psum_reg;
+
+endmodule
