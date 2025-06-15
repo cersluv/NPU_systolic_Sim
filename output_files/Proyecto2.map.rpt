@@ -1,6 +1,6 @@
 Analysis & Elaboration report for Proyecto2
-Wed Jun 11 19:05:12 2025
-Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
+Sun Jun 15 16:18:44 2025
+Quartus Prime Version 22.1std.0 Build 915 10/25/2022 SC Lite Edition
 
 
 ---------------------
@@ -9,48 +9,51 @@ Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
   1. Legal Notice
   2. Analysis & Elaboration Summary
   3. Parallel Compilation
-  4. Parameter Settings for User Entity Instance: Top-level Entity: |SystolicArray4x4
-  5. Parameter Settings for User Entity Instance: PE:ROW[0].COL[0].pe_inst
-  6. Parameter Settings for User Entity Instance: PE:ROW[0].COL[1].pe_inst
-  7. Parameter Settings for User Entity Instance: PE:ROW[0].COL[2].pe_inst
-  8. Parameter Settings for User Entity Instance: PE:ROW[0].COL[3].pe_inst
-  9. Parameter Settings for User Entity Instance: PE:ROW[1].COL[0].pe_inst
- 10. Parameter Settings for User Entity Instance: PE:ROW[1].COL[1].pe_inst
- 11. Parameter Settings for User Entity Instance: PE:ROW[1].COL[2].pe_inst
- 12. Parameter Settings for User Entity Instance: PE:ROW[1].COL[3].pe_inst
- 13. Parameter Settings for User Entity Instance: PE:ROW[2].COL[0].pe_inst
- 14. Parameter Settings for User Entity Instance: PE:ROW[2].COL[1].pe_inst
- 15. Parameter Settings for User Entity Instance: PE:ROW[2].COL[2].pe_inst
- 16. Parameter Settings for User Entity Instance: PE:ROW[2].COL[3].pe_inst
- 17. Parameter Settings for User Entity Instance: PE:ROW[3].COL[0].pe_inst
- 18. Parameter Settings for User Entity Instance: PE:ROW[3].COL[1].pe_inst
- 19. Parameter Settings for User Entity Instance: PE:ROW[3].COL[2].pe_inst
- 20. Parameter Settings for User Entity Instance: PE:ROW[3].COL[3].pe_inst
- 21. Analysis & Elaboration Settings
- 22. Port Connectivity Checks: "PE:ROW[3].COL[3].pe_inst"
- 23. Port Connectivity Checks: "PE:ROW[3].COL[2].pe_inst"
- 24. Port Connectivity Checks: "PE:ROW[3].COL[1].pe_inst"
- 25. Port Connectivity Checks: "PE:ROW[3].COL[0].pe_inst"
- 26. Port Connectivity Checks: "PE:ROW[2].COL[3].pe_inst"
- 27. Port Connectivity Checks: "PE:ROW[2].COL[2].pe_inst"
- 28. Port Connectivity Checks: "PE:ROW[2].COL[1].pe_inst"
- 29. Port Connectivity Checks: "PE:ROW[2].COL[0].pe_inst"
- 30. Port Connectivity Checks: "PE:ROW[1].COL[3].pe_inst"
- 31. Port Connectivity Checks: "PE:ROW[1].COL[2].pe_inst"
- 32. Port Connectivity Checks: "PE:ROW[1].COL[1].pe_inst"
- 33. Port Connectivity Checks: "PE:ROW[1].COL[0].pe_inst"
- 34. Port Connectivity Checks: "PE:ROW[0].COL[3].pe_inst"
- 35. Port Connectivity Checks: "PE:ROW[0].COL[2].pe_inst"
- 36. Port Connectivity Checks: "PE:ROW[0].COL[1].pe_inst"
- 37. Port Connectivity Checks: "PE:ROW[0].COL[0].pe_inst"
- 38. Analysis & Elaboration Messages
+  4. Parameter Settings for User Entity Instance: Top-level Entity: |top_systolic_array
+  5. Parameter Settings for User Entity Instance: SystolicController:controller
+  6. Parameter Settings for User Entity Instance: SystolicArray4x4:array4x4
+  7. Parameter Settings for User Entity Instance: SystolicArray4x4:array4x4|PE:ROW[0].COL[0].pe_inst
+  8. Parameter Settings for User Entity Instance: SystolicArray4x4:array4x4|PE:ROW[0].COL[1].pe_inst
+  9. Parameter Settings for User Entity Instance: SystolicArray4x4:array4x4|PE:ROW[0].COL[2].pe_inst
+ 10. Parameter Settings for User Entity Instance: SystolicArray4x4:array4x4|PE:ROW[0].COL[3].pe_inst
+ 11. Parameter Settings for User Entity Instance: SystolicArray4x4:array4x4|PE:ROW[1].COL[0].pe_inst
+ 12. Parameter Settings for User Entity Instance: SystolicArray4x4:array4x4|PE:ROW[1].COL[1].pe_inst
+ 13. Parameter Settings for User Entity Instance: SystolicArray4x4:array4x4|PE:ROW[1].COL[2].pe_inst
+ 14. Parameter Settings for User Entity Instance: SystolicArray4x4:array4x4|PE:ROW[1].COL[3].pe_inst
+ 15. Parameter Settings for User Entity Instance: SystolicArray4x4:array4x4|PE:ROW[2].COL[0].pe_inst
+ 16. Parameter Settings for User Entity Instance: SystolicArray4x4:array4x4|PE:ROW[2].COL[1].pe_inst
+ 17. Parameter Settings for User Entity Instance: SystolicArray4x4:array4x4|PE:ROW[2].COL[2].pe_inst
+ 18. Parameter Settings for User Entity Instance: SystolicArray4x4:array4x4|PE:ROW[2].COL[3].pe_inst
+ 19. Parameter Settings for User Entity Instance: SystolicArray4x4:array4x4|PE:ROW[3].COL[0].pe_inst
+ 20. Parameter Settings for User Entity Instance: SystolicArray4x4:array4x4|PE:ROW[3].COL[1].pe_inst
+ 21. Parameter Settings for User Entity Instance: SystolicArray4x4:array4x4|PE:ROW[3].COL[2].pe_inst
+ 22. Parameter Settings for User Entity Instance: SystolicArray4x4:array4x4|PE:ROW[3].COL[3].pe_inst
+ 23. Analysis & Elaboration Settings
+ 24. Port Connectivity Checks: "SystolicArray4x4:array4x4|PE:ROW[3].COL[3].pe_inst"
+ 25. Port Connectivity Checks: "SystolicArray4x4:array4x4|PE:ROW[3].COL[2].pe_inst"
+ 26. Port Connectivity Checks: "SystolicArray4x4:array4x4|PE:ROW[3].COL[1].pe_inst"
+ 27. Port Connectivity Checks: "SystolicArray4x4:array4x4|PE:ROW[3].COL[0].pe_inst"
+ 28. Port Connectivity Checks: "SystolicArray4x4:array4x4|PE:ROW[2].COL[3].pe_inst"
+ 29. Port Connectivity Checks: "SystolicArray4x4:array4x4|PE:ROW[2].COL[2].pe_inst"
+ 30. Port Connectivity Checks: "SystolicArray4x4:array4x4|PE:ROW[2].COL[1].pe_inst"
+ 31. Port Connectivity Checks: "SystolicArray4x4:array4x4|PE:ROW[2].COL[0].pe_inst"
+ 32. Port Connectivity Checks: "SystolicArray4x4:array4x4|PE:ROW[1].COL[3].pe_inst"
+ 33. Port Connectivity Checks: "SystolicArray4x4:array4x4|PE:ROW[1].COL[2].pe_inst"
+ 34. Port Connectivity Checks: "SystolicArray4x4:array4x4|PE:ROW[1].COL[1].pe_inst"
+ 35. Port Connectivity Checks: "SystolicArray4x4:array4x4|PE:ROW[1].COL[0].pe_inst"
+ 36. Port Connectivity Checks: "SystolicArray4x4:array4x4|PE:ROW[0].COL[3].pe_inst"
+ 37. Port Connectivity Checks: "SystolicArray4x4:array4x4|PE:ROW[0].COL[2].pe_inst"
+ 38. Port Connectivity Checks: "SystolicArray4x4:array4x4|PE:ROW[0].COL[1].pe_inst"
+ 39. Port Connectivity Checks: "SystolicArray4x4:array4x4|PE:ROW[0].COL[0].pe_inst"
+ 40. Analysis & Elaboration Messages
+ 41. Analysis & Elaboration Suppressed Messages
 
 
 
 ----------------
 ; Legal Notice ;
 ----------------
-Copyright (C) 2020  Intel Corporation. All rights reserved.
+Copyright (C) 2022  Intel Corporation. All rights reserved.
 Your use of Intel Corporation's design tools, logic functions 
 and other software and tools, and any partner logic 
 functions, and any output files from any of the foregoing 
@@ -67,22 +70,22 @@ https://fpgasoftware.intel.com/eula.
 
 
 
-+-----------------------------------------------------------------------------+
-; Analysis & Elaboration Summary                                              ;
-+-------------------------------+---------------------------------------------+
-; Analysis & Elaboration Status ; Successful - Wed Jun 11 19:05:12 2025       ;
-; Quartus Prime Version         ; 20.1.0 Build 711 06/05/2020 SJ Lite Edition ;
-; Revision Name                 ; Proyecto2                                   ;
-; Top-level Entity Name         ; SystolicArray4x4                            ;
-; Family                        ; Cyclone V                                   ;
-; Logic utilization (in ALMs)   ; N/A until Partition Merge                   ;
-; Total registers               ; N/A until Partition Merge                   ;
-; Total pins                    ; N/A until Partition Merge                   ;
-; Total virtual pins            ; N/A until Partition Merge                   ;
-; Total block memory bits       ; N/A until Partition Merge                   ;
-; Total PLLs                    ; N/A until Partition Merge                   ;
-; Total DLLs                    ; N/A until Partition Merge                   ;
-+-------------------------------+---------------------------------------------+
++--------------------------------------------------------------------------------+
+; Analysis & Elaboration Summary                                                 ;
++-------------------------------+------------------------------------------------+
+; Analysis & Elaboration Status ; Successful - Sun Jun 15 16:18:44 2025          ;
+; Quartus Prime Version         ; 22.1std.0 Build 915 10/25/2022 SC Lite Edition ;
+; Revision Name                 ; Proyecto2                                      ;
+; Top-level Entity Name         ; top_systolic_array                             ;
+; Family                        ; Cyclone V                                      ;
+; Logic utilization (in ALMs)   ; N/A until Partition Merge                      ;
+; Total registers               ; N/A until Partition Merge                      ;
+; Total pins                    ; N/A until Partition Merge                      ;
+; Total virtual pins            ; N/A until Partition Merge                      ;
+; Total block memory bits       ; N/A until Partition Merge                      ;
+; Total PLLs                    ; N/A until Partition Merge                      ;
+; Total DLLs                    ; N/A until Partition Merge                      ;
++-------------------------------+------------------------------------------------+
 
 
 +------------------------------------------+
@@ -90,8 +93,8 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+-------------+
 ; Processors                 ; Number      ;
 +----------------------------+-------------+
-; Number detected on machine ; 12          ;
-; Maximum allowed            ; 12          ;
+; Number detected on machine ; 8           ;
+; Maximum allowed            ; 4           ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
 ; Maximum used               ; 1           ;
@@ -101,190 +104,212 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+-------------+
 
 
-+----------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: Top-level Entity: |SystolicArray4x4 ;
-+----------------+-------+---------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                    ;
-+----------------+-------+---------------------------------------------------------+
-; W_A            ; 16    ; Signed Integer                                          ;
-; W_P            ; 32    ; Signed Integer                                          ;
-+----------------+-------+---------------------------------------------------------+
++------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Top-level Entity: |top_systolic_array ;
++----------------+-------+-----------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                      ;
++----------------+-------+-----------------------------------------------------------+
+; W_A            ; 16    ; Signed Integer                                            ;
+; W_P            ; 32    ; Signed Integer                                            ;
++----------------+-------+-----------------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+-----------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: PE:ROW[0].COL[0].pe_inst ;
-+----------------+-------+----------------------------------------------+
-; Parameter Name ; Value ; Type                                         ;
-+----------------+-------+----------------------------------------------+
-; W_A            ; 16    ; Signed Integer                               ;
-; W_P            ; 32    ; Signed Integer                               ;
-+----------------+-------+----------------------------------------------+
++----------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: SystolicController:controller ;
++----------------+-------+---------------------------------------------------+
+; Parameter Name ; Value ; Type                                              ;
++----------------+-------+---------------------------------------------------+
+; W_A            ; 16    ; Signed Integer                                    ;
+; W_P            ; 32    ; Signed Integer                                    ;
++----------------+-------+---------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+-----------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: PE:ROW[0].COL[1].pe_inst ;
-+----------------+-------+----------------------------------------------+
-; Parameter Name ; Value ; Type                                         ;
-+----------------+-------+----------------------------------------------+
-; W_A            ; 16    ; Signed Integer                               ;
-; W_P            ; 32    ; Signed Integer                               ;
-+----------------+-------+----------------------------------------------+
++------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: SystolicArray4x4:array4x4 ;
++----------------+-------+-----------------------------------------------+
+; Parameter Name ; Value ; Type                                          ;
++----------------+-------+-----------------------------------------------+
+; W_A            ; 16    ; Signed Integer                                ;
+; W_P            ; 32    ; Signed Integer                                ;
++----------------+-------+-----------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+-----------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: PE:ROW[0].COL[2].pe_inst ;
-+----------------+-------+----------------------------------------------+
-; Parameter Name ; Value ; Type                                         ;
-+----------------+-------+----------------------------------------------+
-; W_A            ; 16    ; Signed Integer                               ;
-; W_P            ; 32    ; Signed Integer                               ;
-+----------------+-------+----------------------------------------------+
++-------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: SystolicArray4x4:array4x4|PE:ROW[0].COL[0].pe_inst ;
++----------------+-------+------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                   ;
++----------------+-------+------------------------------------------------------------------------+
+; W_A            ; 16    ; Signed Integer                                                         ;
+; W_P            ; 32    ; Signed Integer                                                         ;
++----------------+-------+------------------------------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+-----------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: PE:ROW[0].COL[3].pe_inst ;
-+----------------+-------+----------------------------------------------+
-; Parameter Name ; Value ; Type                                         ;
-+----------------+-------+----------------------------------------------+
-; W_A            ; 16    ; Signed Integer                               ;
-; W_P            ; 32    ; Signed Integer                               ;
-+----------------+-------+----------------------------------------------+
++-------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: SystolicArray4x4:array4x4|PE:ROW[0].COL[1].pe_inst ;
++----------------+-------+------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                   ;
++----------------+-------+------------------------------------------------------------------------+
+; W_A            ; 16    ; Signed Integer                                                         ;
+; W_P            ; 32    ; Signed Integer                                                         ;
++----------------+-------+------------------------------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+-----------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: PE:ROW[1].COL[0].pe_inst ;
-+----------------+-------+----------------------------------------------+
-; Parameter Name ; Value ; Type                                         ;
-+----------------+-------+----------------------------------------------+
-; W_A            ; 16    ; Signed Integer                               ;
-; W_P            ; 32    ; Signed Integer                               ;
-+----------------+-------+----------------------------------------------+
++-------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: SystolicArray4x4:array4x4|PE:ROW[0].COL[2].pe_inst ;
++----------------+-------+------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                   ;
++----------------+-------+------------------------------------------------------------------------+
+; W_A            ; 16    ; Signed Integer                                                         ;
+; W_P            ; 32    ; Signed Integer                                                         ;
++----------------+-------+------------------------------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+-----------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: PE:ROW[1].COL[1].pe_inst ;
-+----------------+-------+----------------------------------------------+
-; Parameter Name ; Value ; Type                                         ;
-+----------------+-------+----------------------------------------------+
-; W_A            ; 16    ; Signed Integer                               ;
-; W_P            ; 32    ; Signed Integer                               ;
-+----------------+-------+----------------------------------------------+
++-------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: SystolicArray4x4:array4x4|PE:ROW[0].COL[3].pe_inst ;
++----------------+-------+------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                   ;
++----------------+-------+------------------------------------------------------------------------+
+; W_A            ; 16    ; Signed Integer                                                         ;
+; W_P            ; 32    ; Signed Integer                                                         ;
++----------------+-------+------------------------------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+-----------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: PE:ROW[1].COL[2].pe_inst ;
-+----------------+-------+----------------------------------------------+
-; Parameter Name ; Value ; Type                                         ;
-+----------------+-------+----------------------------------------------+
-; W_A            ; 16    ; Signed Integer                               ;
-; W_P            ; 32    ; Signed Integer                               ;
-+----------------+-------+----------------------------------------------+
++-------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: SystolicArray4x4:array4x4|PE:ROW[1].COL[0].pe_inst ;
++----------------+-------+------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                   ;
++----------------+-------+------------------------------------------------------------------------+
+; W_A            ; 16    ; Signed Integer                                                         ;
+; W_P            ; 32    ; Signed Integer                                                         ;
++----------------+-------+------------------------------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+-----------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: PE:ROW[1].COL[3].pe_inst ;
-+----------------+-------+----------------------------------------------+
-; Parameter Name ; Value ; Type                                         ;
-+----------------+-------+----------------------------------------------+
-; W_A            ; 16    ; Signed Integer                               ;
-; W_P            ; 32    ; Signed Integer                               ;
-+----------------+-------+----------------------------------------------+
++-------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: SystolicArray4x4:array4x4|PE:ROW[1].COL[1].pe_inst ;
++----------------+-------+------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                   ;
++----------------+-------+------------------------------------------------------------------------+
+; W_A            ; 16    ; Signed Integer                                                         ;
+; W_P            ; 32    ; Signed Integer                                                         ;
++----------------+-------+------------------------------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+-----------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: PE:ROW[2].COL[0].pe_inst ;
-+----------------+-------+----------------------------------------------+
-; Parameter Name ; Value ; Type                                         ;
-+----------------+-------+----------------------------------------------+
-; W_A            ; 16    ; Signed Integer                               ;
-; W_P            ; 32    ; Signed Integer                               ;
-+----------------+-------+----------------------------------------------+
++-------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: SystolicArray4x4:array4x4|PE:ROW[1].COL[2].pe_inst ;
++----------------+-------+------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                   ;
++----------------+-------+------------------------------------------------------------------------+
+; W_A            ; 16    ; Signed Integer                                                         ;
+; W_P            ; 32    ; Signed Integer                                                         ;
++----------------+-------+------------------------------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+-----------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: PE:ROW[2].COL[1].pe_inst ;
-+----------------+-------+----------------------------------------------+
-; Parameter Name ; Value ; Type                                         ;
-+----------------+-------+----------------------------------------------+
-; W_A            ; 16    ; Signed Integer                               ;
-; W_P            ; 32    ; Signed Integer                               ;
-+----------------+-------+----------------------------------------------+
++-------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: SystolicArray4x4:array4x4|PE:ROW[1].COL[3].pe_inst ;
++----------------+-------+------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                   ;
++----------------+-------+------------------------------------------------------------------------+
+; W_A            ; 16    ; Signed Integer                                                         ;
+; W_P            ; 32    ; Signed Integer                                                         ;
++----------------+-------+------------------------------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+-----------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: PE:ROW[2].COL[2].pe_inst ;
-+----------------+-------+----------------------------------------------+
-; Parameter Name ; Value ; Type                                         ;
-+----------------+-------+----------------------------------------------+
-; W_A            ; 16    ; Signed Integer                               ;
-; W_P            ; 32    ; Signed Integer                               ;
-+----------------+-------+----------------------------------------------+
++-------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: SystolicArray4x4:array4x4|PE:ROW[2].COL[0].pe_inst ;
++----------------+-------+------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                   ;
++----------------+-------+------------------------------------------------------------------------+
+; W_A            ; 16    ; Signed Integer                                                         ;
+; W_P            ; 32    ; Signed Integer                                                         ;
++----------------+-------+------------------------------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+-----------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: PE:ROW[2].COL[3].pe_inst ;
-+----------------+-------+----------------------------------------------+
-; Parameter Name ; Value ; Type                                         ;
-+----------------+-------+----------------------------------------------+
-; W_A            ; 16    ; Signed Integer                               ;
-; W_P            ; 32    ; Signed Integer                               ;
-+----------------+-------+----------------------------------------------+
++-------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: SystolicArray4x4:array4x4|PE:ROW[2].COL[1].pe_inst ;
++----------------+-------+------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                   ;
++----------------+-------+------------------------------------------------------------------------+
+; W_A            ; 16    ; Signed Integer                                                         ;
+; W_P            ; 32    ; Signed Integer                                                         ;
++----------------+-------+------------------------------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+-----------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: PE:ROW[3].COL[0].pe_inst ;
-+----------------+-------+----------------------------------------------+
-; Parameter Name ; Value ; Type                                         ;
-+----------------+-------+----------------------------------------------+
-; W_A            ; 16    ; Signed Integer                               ;
-; W_P            ; 32    ; Signed Integer                               ;
-+----------------+-------+----------------------------------------------+
++-------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: SystolicArray4x4:array4x4|PE:ROW[2].COL[2].pe_inst ;
++----------------+-------+------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                   ;
++----------------+-------+------------------------------------------------------------------------+
+; W_A            ; 16    ; Signed Integer                                                         ;
+; W_P            ; 32    ; Signed Integer                                                         ;
++----------------+-------+------------------------------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+-----------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: PE:ROW[3].COL[1].pe_inst ;
-+----------------+-------+----------------------------------------------+
-; Parameter Name ; Value ; Type                                         ;
-+----------------+-------+----------------------------------------------+
-; W_A            ; 16    ; Signed Integer                               ;
-; W_P            ; 32    ; Signed Integer                               ;
-+----------------+-------+----------------------------------------------+
++-------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: SystolicArray4x4:array4x4|PE:ROW[2].COL[3].pe_inst ;
++----------------+-------+------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                   ;
++----------------+-------+------------------------------------------------------------------------+
+; W_A            ; 16    ; Signed Integer                                                         ;
+; W_P            ; 32    ; Signed Integer                                                         ;
++----------------+-------+------------------------------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+-----------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: PE:ROW[3].COL[2].pe_inst ;
-+----------------+-------+----------------------------------------------+
-; Parameter Name ; Value ; Type                                         ;
-+----------------+-------+----------------------------------------------+
-; W_A            ; 16    ; Signed Integer                               ;
-; W_P            ; 32    ; Signed Integer                               ;
-+----------------+-------+----------------------------------------------+
++-------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: SystolicArray4x4:array4x4|PE:ROW[3].COL[0].pe_inst ;
++----------------+-------+------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                   ;
++----------------+-------+------------------------------------------------------------------------+
+; W_A            ; 16    ; Signed Integer                                                         ;
+; W_P            ; 32    ; Signed Integer                                                         ;
++----------------+-------+------------------------------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+-----------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: PE:ROW[3].COL[3].pe_inst ;
-+----------------+-------+----------------------------------------------+
-; Parameter Name ; Value ; Type                                         ;
-+----------------+-------+----------------------------------------------+
-; W_A            ; 16    ; Signed Integer                               ;
-; W_P            ; 32    ; Signed Integer                               ;
-+----------------+-------+----------------------------------------------+
++-------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: SystolicArray4x4:array4x4|PE:ROW[3].COL[1].pe_inst ;
++----------------+-------+------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                   ;
++----------------+-------+------------------------------------------------------------------------+
+; W_A            ; 16    ; Signed Integer                                                         ;
+; W_P            ; 32    ; Signed Integer                                                         ;
++----------------+-------+------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: SystolicArray4x4:array4x4|PE:ROW[3].COL[2].pe_inst ;
++----------------+-------+------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                   ;
++----------------+-------+------------------------------------------------------------------------+
+; W_A            ; 16    ; Signed Integer                                                         ;
+; W_P            ; 32    ; Signed Integer                                                         ;
++----------------+-------+------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: SystolicArray4x4:array4x4|PE:ROW[3].COL[3].pe_inst ;
++----------------+-------+------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                   ;
++----------------+-------+------------------------------------------------------------------------+
+; W_A            ; 16    ; Signed Integer                                                         ;
+; W_P            ; 32    ; Signed Integer                                                         ;
++----------------+-------+------------------------------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
@@ -294,7 +319,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; Option                                                                          ; Setting            ; Default Value      ;
 +---------------------------------------------------------------------------------+--------------------+--------------------+
 ; Device                                                                          ; 5CSEMA5F31C6       ;                    ;
-; Top-level entity name                                                           ; SystolicArray4x4   ; Proyecto2          ;
+; Top-level entity name                                                           ; top_systolic_array ; Proyecto2          ;
 ; Family name                                                                     ; Cyclone V          ; Cyclone V          ;
 ; Use smart compilation                                                           ; Off                ; Off                ;
 ; Enable parallel Assembler and Timing Analyzer during compilation                ; On                 ; On                 ;
@@ -376,7 +401,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 
 
 +-----------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "PE:ROW[3].COL[3].pe_inst"                                                                  ;
+; Port Connectivity Checks: "SystolicArray4x4:array4x4|PE:ROW[3].COL[3].pe_inst"                                        ;
 +-------------+--------+----------+-------------------------------------------------------------------------------------+
 ; Port        ; Type   ; Severity ; Details                                                                             ;
 +-------------+--------+----------+-------------------------------------------------------------------------------------+
@@ -388,7 +413,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 
 
 +-----------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "PE:ROW[3].COL[2].pe_inst"                                                                  ;
+; Port Connectivity Checks: "SystolicArray4x4:array4x4|PE:ROW[3].COL[2].pe_inst"                                        ;
 +-------------+--------+----------+-------------------------------------------------------------------------------------+
 ; Port        ; Type   ; Severity ; Details                                                                             ;
 +-------------+--------+----------+-------------------------------------------------------------------------------------+
@@ -399,7 +424,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 
 
 +-----------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "PE:ROW[3].COL[1].pe_inst"                                                                  ;
+; Port Connectivity Checks: "SystolicArray4x4:array4x4|PE:ROW[3].COL[1].pe_inst"                                        ;
 +-------------+--------+----------+-------------------------------------------------------------------------------------+
 ; Port        ; Type   ; Severity ; Details                                                                             ;
 +-------------+--------+----------+-------------------------------------------------------------------------------------+
@@ -410,7 +435,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 
 
 +-------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "PE:ROW[3].COL[0].pe_inst"                                                                    ;
+; Port Connectivity Checks: "SystolicArray4x4:array4x4|PE:ROW[3].COL[0].pe_inst"                                          ;
 +---------------+--------+----------+-------------------------------------------------------------------------------------+
 ; Port          ; Type   ; Severity ; Details                                                                             ;
 +---------------+--------+----------+-------------------------------------------------------------------------------------+
@@ -422,7 +447,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 
 
 +-----------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "PE:ROW[2].COL[3].pe_inst"                                                                  ;
+; Port Connectivity Checks: "SystolicArray4x4:array4x4|PE:ROW[2].COL[3].pe_inst"                                        ;
 +-------------+--------+----------+-------------------------------------------------------------------------------------+
 ; Port        ; Type   ; Severity ; Details                                                                             ;
 +-------------+--------+----------+-------------------------------------------------------------------------------------+
@@ -432,39 +457,39 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-------------+--------+----------+-------------------------------------------------------------------------------------+
 
 
-+------------------------------------------------------+
-; Port Connectivity Checks: "PE:ROW[2].COL[2].pe_inst" ;
-+--------+-------+----------+--------------------------+
-; Port   ; Type  ; Severity ; Details                  ;
-+--------+-------+----------+--------------------------+
-; load_a ; Input ; Info     ; Stuck at GND             ;
-; load_b ; Input ; Info     ; Stuck at GND             ;
-+--------+-------+----------+--------------------------+
++--------------------------------------------------------------------------------+
+; Port Connectivity Checks: "SystolicArray4x4:array4x4|PE:ROW[2].COL[2].pe_inst" ;
++--------+-------+----------+----------------------------------------------------+
+; Port   ; Type  ; Severity ; Details                                            ;
++--------+-------+----------+----------------------------------------------------+
+; load_a ; Input ; Info     ; Stuck at GND                                       ;
+; load_b ; Input ; Info     ; Stuck at GND                                       ;
++--------+-------+----------+----------------------------------------------------+
 
 
-+------------------------------------------------------+
-; Port Connectivity Checks: "PE:ROW[2].COL[1].pe_inst" ;
-+--------+-------+----------+--------------------------+
-; Port   ; Type  ; Severity ; Details                  ;
-+--------+-------+----------+--------------------------+
-; load_a ; Input ; Info     ; Stuck at GND             ;
-; load_b ; Input ; Info     ; Stuck at GND             ;
-+--------+-------+----------+--------------------------+
++--------------------------------------------------------------------------------+
+; Port Connectivity Checks: "SystolicArray4x4:array4x4|PE:ROW[2].COL[1].pe_inst" ;
++--------+-------+----------+----------------------------------------------------+
+; Port   ; Type  ; Severity ; Details                                            ;
++--------+-------+----------+----------------------------------------------------+
+; load_a ; Input ; Info     ; Stuck at GND                                       ;
+; load_b ; Input ; Info     ; Stuck at GND                                       ;
++--------+-------+----------+----------------------------------------------------+
 
 
-+------------------------------------------------------+
-; Port Connectivity Checks: "PE:ROW[2].COL[0].pe_inst" ;
-+---------------+-------+----------+-------------------+
-; Port          ; Type  ; Severity ; Details           ;
-+---------------+-------+----------+-------------------+
-; load_a        ; Input ; Info     ; Stuck at VCC      ;
-; load_b        ; Input ; Info     ; Stuck at GND      ;
-; shift_a_in[0] ; Input ; Info     ; Stuck at GND      ;
-+---------------+-------+----------+-------------------+
++--------------------------------------------------------------------------------+
+; Port Connectivity Checks: "SystolicArray4x4:array4x4|PE:ROW[2].COL[0].pe_inst" ;
++---------------+-------+----------+---------------------------------------------+
+; Port          ; Type  ; Severity ; Details                                     ;
++---------------+-------+----------+---------------------------------------------+
+; load_a        ; Input ; Info     ; Stuck at VCC                                ;
+; load_b        ; Input ; Info     ; Stuck at GND                                ;
+; shift_a_in[0] ; Input ; Info     ; Stuck at GND                                ;
++---------------+-------+----------+---------------------------------------------+
 
 
 +-----------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "PE:ROW[1].COL[3].pe_inst"                                                                  ;
+; Port Connectivity Checks: "SystolicArray4x4:array4x4|PE:ROW[1].COL[3].pe_inst"                                        ;
 +-------------+--------+----------+-------------------------------------------------------------------------------------+
 ; Port        ; Type   ; Severity ; Details                                                                             ;
 +-------------+--------+----------+-------------------------------------------------------------------------------------+
@@ -474,39 +499,39 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-------------+--------+----------+-------------------------------------------------------------------------------------+
 
 
-+------------------------------------------------------+
-; Port Connectivity Checks: "PE:ROW[1].COL[2].pe_inst" ;
-+--------+-------+----------+--------------------------+
-; Port   ; Type  ; Severity ; Details                  ;
-+--------+-------+----------+--------------------------+
-; load_a ; Input ; Info     ; Stuck at GND             ;
-; load_b ; Input ; Info     ; Stuck at GND             ;
-+--------+-------+----------+--------------------------+
++--------------------------------------------------------------------------------+
+; Port Connectivity Checks: "SystolicArray4x4:array4x4|PE:ROW[1].COL[2].pe_inst" ;
++--------+-------+----------+----------------------------------------------------+
+; Port   ; Type  ; Severity ; Details                                            ;
++--------+-------+----------+----------------------------------------------------+
+; load_a ; Input ; Info     ; Stuck at GND                                       ;
+; load_b ; Input ; Info     ; Stuck at GND                                       ;
++--------+-------+----------+----------------------------------------------------+
 
 
-+------------------------------------------------------+
-; Port Connectivity Checks: "PE:ROW[1].COL[1].pe_inst" ;
-+--------+-------+----------+--------------------------+
-; Port   ; Type  ; Severity ; Details                  ;
-+--------+-------+----------+--------------------------+
-; load_a ; Input ; Info     ; Stuck at GND             ;
-; load_b ; Input ; Info     ; Stuck at GND             ;
-+--------+-------+----------+--------------------------+
++--------------------------------------------------------------------------------+
+; Port Connectivity Checks: "SystolicArray4x4:array4x4|PE:ROW[1].COL[1].pe_inst" ;
++--------+-------+----------+----------------------------------------------------+
+; Port   ; Type  ; Severity ; Details                                            ;
++--------+-------+----------+----------------------------------------------------+
+; load_a ; Input ; Info     ; Stuck at GND                                       ;
+; load_b ; Input ; Info     ; Stuck at GND                                       ;
++--------+-------+----------+----------------------------------------------------+
 
 
-+------------------------------------------------------+
-; Port Connectivity Checks: "PE:ROW[1].COL[0].pe_inst" ;
-+---------------+-------+----------+-------------------+
-; Port          ; Type  ; Severity ; Details           ;
-+---------------+-------+----------+-------------------+
-; load_a        ; Input ; Info     ; Stuck at VCC      ;
-; load_b        ; Input ; Info     ; Stuck at GND      ;
-; shift_a_in[0] ; Input ; Info     ; Stuck at GND      ;
-+---------------+-------+----------+-------------------+
++--------------------------------------------------------------------------------+
+; Port Connectivity Checks: "SystolicArray4x4:array4x4|PE:ROW[1].COL[0].pe_inst" ;
++---------------+-------+----------+---------------------------------------------+
+; Port          ; Type  ; Severity ; Details                                     ;
++---------------+-------+----------+---------------------------------------------+
+; load_a        ; Input ; Info     ; Stuck at VCC                                ;
+; load_b        ; Input ; Info     ; Stuck at GND                                ;
+; shift_a_in[0] ; Input ; Info     ; Stuck at GND                                ;
++---------------+-------+----------+---------------------------------------------+
 
 
 +-------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "PE:ROW[0].COL[3].pe_inst"                                                                    ;
+; Port Connectivity Checks: "SystolicArray4x4:array4x4|PE:ROW[0].COL[3].pe_inst"                                          ;
 +---------------+--------+----------+-------------------------------------------------------------------------------------+
 ; Port          ; Type   ; Severity ; Details                                                                             ;
 +---------------+--------+----------+-------------------------------------------------------------------------------------+
@@ -517,38 +542,38 @@ Note: In order to hide this table in the UI and the text report file, please set
 +---------------+--------+----------+-------------------------------------------------------------------------------------+
 
 
-+------------------------------------------------------+
-; Port Connectivity Checks: "PE:ROW[0].COL[2].pe_inst" ;
-+---------------+-------+----------+-------------------+
-; Port          ; Type  ; Severity ; Details           ;
-+---------------+-------+----------+-------------------+
-; load_a        ; Input ; Info     ; Stuck at GND      ;
-; load_b        ; Input ; Info     ; Stuck at VCC      ;
-; shift_b_in[0] ; Input ; Info     ; Stuck at GND      ;
-+---------------+-------+----------+-------------------+
++--------------------------------------------------------------------------------+
+; Port Connectivity Checks: "SystolicArray4x4:array4x4|PE:ROW[0].COL[2].pe_inst" ;
++---------------+-------+----------+---------------------------------------------+
+; Port          ; Type  ; Severity ; Details                                     ;
++---------------+-------+----------+---------------------------------------------+
+; load_a        ; Input ; Info     ; Stuck at GND                                ;
+; load_b        ; Input ; Info     ; Stuck at VCC                                ;
+; shift_b_in[0] ; Input ; Info     ; Stuck at GND                                ;
++---------------+-------+----------+---------------------------------------------+
 
 
-+------------------------------------------------------+
-; Port Connectivity Checks: "PE:ROW[0].COL[1].pe_inst" ;
-+---------------+-------+----------+-------------------+
-; Port          ; Type  ; Severity ; Details           ;
-+---------------+-------+----------+-------------------+
-; load_a        ; Input ; Info     ; Stuck at GND      ;
-; load_b        ; Input ; Info     ; Stuck at VCC      ;
-; shift_b_in[0] ; Input ; Info     ; Stuck at GND      ;
-+---------------+-------+----------+-------------------+
++--------------------------------------------------------------------------------+
+; Port Connectivity Checks: "SystolicArray4x4:array4x4|PE:ROW[0].COL[1].pe_inst" ;
++---------------+-------+----------+---------------------------------------------+
+; Port          ; Type  ; Severity ; Details                                     ;
++---------------+-------+----------+---------------------------------------------+
+; load_a        ; Input ; Info     ; Stuck at GND                                ;
+; load_b        ; Input ; Info     ; Stuck at VCC                                ;
+; shift_b_in[0] ; Input ; Info     ; Stuck at GND                                ;
++---------------+-------+----------+---------------------------------------------+
 
 
-+------------------------------------------------------+
-; Port Connectivity Checks: "PE:ROW[0].COL[0].pe_inst" ;
-+---------------+-------+----------+-------------------+
-; Port          ; Type  ; Severity ; Details           ;
-+---------------+-------+----------+-------------------+
-; load_a        ; Input ; Info     ; Stuck at VCC      ;
-; load_b        ; Input ; Info     ; Stuck at VCC      ;
-; shift_a_in[0] ; Input ; Info     ; Stuck at GND      ;
-; shift_b_in[0] ; Input ; Info     ; Stuck at GND      ;
-+---------------+-------+----------+-------------------+
++--------------------------------------------------------------------------------+
+; Port Connectivity Checks: "SystolicArray4x4:array4x4|PE:ROW[0].COL[0].pe_inst" ;
++---------------+-------+----------+---------------------------------------------+
+; Port          ; Type  ; Severity ; Details                                     ;
++---------------+-------+----------+---------------------------------------------+
+; load_a        ; Input ; Info     ; Stuck at VCC                                ;
+; load_b        ; Input ; Info     ; Stuck at VCC                                ;
+; shift_a_in[0] ; Input ; Info     ; Stuck at GND                                ;
+; shift_b_in[0] ; Input ; Info     ; Stuck at GND                                ;
++---------------+-------+----------+---------------------------------------------+
 
 
 +---------------------------------+
@@ -556,30 +581,56 @@ Note: In order to hide this table in the UI and the text report file, please set
 +---------------------------------+
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Elaboration
-    Info: Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
-    Info: Processing started: Wed Jun 11 19:05:05 2025
+    Info: Version 22.1std.0 Build 915 10/25/2022 SC Lite Edition
+    Info: Processing started: Sun Jun 15 16:18:19 2025
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Proyecto2 -c Proyecto2 --analysis_and_elaboration
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (20030): Parallel compilation is enabled and will use 12 of the 12 processors detected
+Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
+Info (12021): Found 1 design units, including 1 entities, in source file tb_systoliccontroller.sv
+    Info (12023): Found entity 1: tb_SystolicController File: C:/Users/jorge/OneDrive/Documentos/GitHub/NPU_systolic_Sim/tb_SystolicController.sv Line: 3
 Info (12021): Found 1 design units, including 1 entities, in source file pe.sv
-    Info (12023): Found entity 1: PE File: C:/Users/Yoshantt/Documents/Felipe/TEC/7mo Semestre/Arquitectura de Computadores II/Proyecto2/PE.sv Line: 6
+    Info (12023): Found entity 1: PE File: C:/Users/jorge/OneDrive/Documentos/GitHub/NPU_systolic_Sim/PE.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file tb_pe.sv
-    Info (12023): Found entity 1: tb_PE File: C:/Users/Yoshantt/Documents/Felipe/TEC/7mo Semestre/Arquitectura de Computadores II/Proyecto2/tb_PE.sv Line: 4
+    Info (12023): Found entity 1: tb_PE File: C:/Users/jorge/OneDrive/Documentos/GitHub/NPU_systolic_Sim/tb_PE.sv Line: 4
 Info (12021): Found 1 design units, including 1 entities, in source file systolicarray4x4.sv
-    Info (12023): Found entity 1: SystolicArray4x4 File: C:/Users/Yoshantt/Documents/Felipe/TEC/7mo Semestre/Arquitectura de Computadores II/Proyecto2/SystolicArray4x4.sv Line: 6
+    Info (12023): Found entity 1: SystolicArray4x4 File: C:/Users/jorge/OneDrive/Documentos/GitHub/NPU_systolic_Sim/SystolicArray4x4.sv Line: 6
 Info (12021): Found 1 design units, including 1 entities, in source file tb_systolicarray4x4.sv
-    Info (12023): Found entity 1: tb_SystolicArray4x4 File: C:/Users/Yoshantt/Documents/Felipe/TEC/7mo Semestre/Arquitectura de Computadores II/Proyecto2/tb_SystolicArray4x4.sv Line: 4
-Info (12127): Elaborating entity "SystolicArray4x4" for the top level hierarchy
+    Info (12023): Found entity 1: tb_SystolicArray4x4 File: C:/Users/jorge/OneDrive/Documentos/GitHub/NPU_systolic_Sim/tb_SystolicArray4x4.sv Line: 3
+Info (12021): Found 1 design units, including 1 entities, in source file systoliccontroller.sv
+    Info (12023): Found entity 1: SystolicController File: C:/Users/jorge/OneDrive/Documentos/GitHub/NPU_systolic_Sim/SystolicController.sv Line: 4
+Info (12021): Found 1 design units, including 1 entities, in source file top_systolic_array.sv
+    Info (12023): Found entity 1: top_systolic_array File: C:/Users/jorge/OneDrive/Documentos/GitHub/NPU_systolic_Sim/top_systolic_array.sv Line: 4
+Info (12021): Found 1 design units, including 1 entities, in source file tb_top_systolic_array.sv
+    Info (12023): Found entity 1: tb_top_systolic_array File: C:/Users/jorge/OneDrive/Documentos/GitHub/NPU_systolic_Sim/tb_top_systolic_array.sv Line: 3
+Info (12127): Elaborating entity "top_systolic_array" for the top level hierarchy
+Info (10008): Verilog HDL or VHDL information: EDA Netlist Writer cannot regroup multidimensional array "result" into its bus
+Info (10008): Verilog HDL or VHDL information: EDA Netlist Writer cannot regroup multidimensional array "result" into its bus
+Info (12128): Elaborating entity "SystolicController" for hierarchy "SystolicController:controller" File: C:/Users/jorge/OneDrive/Documentos/GitHub/NPU_systolic_Sim/top_systolic_array.sv Line: 32
+Warning (10230): Verilog HDL assignment warning at SystolicController.sv(61): truncated value with size 32 to match size of target (4) File: C:/Users/jorge/OneDrive/Documentos/GitHub/NPU_systolic_Sim/SystolicController.sv Line: 61
+Warning (10230): Verilog HDL assignment warning at SystolicController.sv(88): truncated value with size 32 to match size of target (16) File: C:/Users/jorge/OneDrive/Documentos/GitHub/NPU_systolic_Sim/SystolicController.sv Line: 88
+Warning (10230): Verilog HDL assignment warning at SystolicController.sv(89): truncated value with size 32 to match size of target (16) File: C:/Users/jorge/OneDrive/Documentos/GitHub/NPU_systolic_Sim/SystolicController.sv Line: 89
+Info (10008): Verilog HDL or VHDL information: EDA Netlist Writer cannot regroup multidimensional array "result" into its bus
+Info (10008): Verilog HDL or VHDL information: EDA Netlist Writer cannot regroup multidimensional array "A" into its bus
+Info (10008): Verilog HDL or VHDL information: EDA Netlist Writer cannot regroup multidimensional array "B" into its bus
+Info (10008): Verilog HDL or VHDL information: EDA Netlist Writer cannot regroup multidimensional array "result" into its bus
+Info (12128): Elaborating entity "SystolicArray4x4" for hierarchy "SystolicArray4x4:array4x4" File: C:/Users/jorge/OneDrive/Documentos/GitHub/NPU_systolic_Sim/top_systolic_array.sv Line: 44
 Info (10008): Verilog HDL or VHDL information: EDA Netlist Writer cannot regroup multidimensional array "result" into its bus
 Info (10008): Verilog HDL or VHDL information: EDA Netlist Writer cannot regroup multidimensional array "shiftA" into its bus
 Info (10008): Verilog HDL or VHDL information: EDA Netlist Writer cannot regroup multidimensional array "shiftB" into its bus
 Info (10008): Verilog HDL or VHDL information: EDA Netlist Writer cannot regroup multidimensional array "psum" into its bus
 Info (10008): Verilog HDL or VHDL information: EDA Netlist Writer cannot regroup multidimensional array "result" into its bus
-Info (12128): Elaborating entity "PE" for hierarchy "PE:ROW[0].COL[0].pe_inst" File: C:/Users/Yoshantt/Documents/Felipe/TEC/7mo Semestre/Arquitectura de Computadores II/Proyecto2/SystolicArray4x4.sv Line: 47
-Info: Quartus Prime Analysis & Elaboration was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 4773 megabytes
-    Info: Processing ended: Wed Jun 11 19:05:12 2025
-    Info: Elapsed time: 00:00:07
-    Info: Total CPU time (on all processors): 00:00:16
+Info (12128): Elaborating entity "PE" for hierarchy "SystolicArray4x4:array4x4|PE:ROW[0].COL[0].pe_inst" File: C:/Users/jorge/OneDrive/Documentos/GitHub/NPU_systolic_Sim/SystolicArray4x4.sv Line: 47
+Info (144001): Generated suppressed messages file C:/Users/jorge/OneDrive/Documentos/GitHub/NPU_systolic_Sim/output_files/Proyecto2.map.smsg
+Info: Quartus Prime Analysis & Elaboration was successful. 0 errors, 4 warnings
+    Info: Peak virtual memory: 4807 megabytes
+    Info: Processing ended: Sun Jun 15 16:18:44 2025
+    Info: Elapsed time: 00:00:25
+    Info: Total CPU time (on all processors): 00:00:40
+
+
++--------------------------------------------+
+; Analysis & Elaboration Suppressed Messages ;
++--------------------------------------------+
+The suppressed messages can be found in C:/Users/jorge/OneDrive/Documentos/GitHub/NPU_systolic_Sim/output_files/Proyecto2.map.smsg.
 
 

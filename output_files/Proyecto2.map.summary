@@ -1,7 +1,7 @@
-Analysis & Elaboration Status : Successful - Wed Jun 11 19:05:12 2025
-Quartus Prime Version : 20.1.0 Build 711 06/05/2020 SJ Lite Edition
+Analysis & Elaboration Status : Successful - Sun Jun 15 16:18:44 2025
+Quartus Prime Version : 22.1std.0 Build 915 10/25/2022 SC Lite Edition
 Revision Name : Proyecto2
-Top-level Entity Name : SystolicArray4x4
+Top-level Entity Name : top_systolic_array
 Family : Cyclone V
 Logic utilization (in ALMs) : N/A until Partition Merge
 Total registers : N/A until Partition Merge

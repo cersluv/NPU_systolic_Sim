@@ -68,15 +68,24 @@ module tb_PE;
     // Deassert loads after injection
     load_a = 0;
     load_b = 0;
-    // Check results
+    
+    // Wait one more cycle for shift outputs to propagate
+    @(posedge clk);
+    
+    // Check shift outputs (available now) and store them
     assert(shift_a_out == 16'sd5)
       else $error("Test1: shift_a_out expected 5, got %0d", shift_a_out);
     assert(shift_b_out == 16'sd4)
       else $error("Test1: shift_b_out expected 4, got %0d", shift_b_out);
+    $display("[%0t] Test1 Shift check: shiftA=%0d, shiftB=%0d", $time, shift_a_out, shift_b_out);
+    
+    // Wait one more cycle for psum to propagate
+    @(posedge clk);
+    
+    // Check psum (available with additional delay)
     assert(psum_out == 32'sd20)
       else $error("Test1: psum_out expected 20, got %0d", psum_out);
-    $display("[%0t] Test1 PASS: psum=%0d, shiftA=%0d, shiftB=%0d",
-             $time, psum_out, shift_a_out, shift_b_out);
+    $display("[%0t] Test1 PASS: psum=%0d", $time, psum_out);
 
     // --------------------------------------------------------
     // Test 2: Injection of A=-3, B=7 on cycle 2
@@ -89,15 +98,24 @@ module tb_PE;
     // Deassert loads
     load_a = 0;
     load_b = 0;
-    // Check accumulation: 20 + (-3*7) = -1
+    
+    // Wait one more cycle for shift outputs to propagate
+    @(posedge clk);
+    
+    // Check shift outputs
     assert(shift_a_out == -16'sd3)
       else $error("Test2: shift_a_out expected -3, got %0d", shift_a_out);
     assert(shift_b_out == 16'sd7)
       else $error("Test2: shift_b_out expected 7, got %0d", shift_b_out);
+    $display("[%0t] Test2 Shift check: shiftA=%0d, shiftB=%0d", $time, shift_a_out, shift_b_out);
+    
+    // Wait one more cycle for psum to propagate
+    @(posedge clk);
+    
+    // Check accumulation: 20 + (-3*7) = -1
     assert(psum_out == (32'sd20 + -21))
       else $error("Test2: psum_out expected -1, got %0d", psum_out);
-    $display("[%0t] Test2 PASS: psum=%0d, shiftA=%0d, shiftB=%0d",
-             $time, psum_out, shift_a_out, shift_b_out);
+    $display("[%0t] Test2 PASS: psum=%0d", $time, psum_out);
 
     // --------------------------------------------------------
     // Test 3: Shift-only (no injection) on cycle 3
@@ -111,15 +129,24 @@ module tb_PE;
     shift_a_in = 16'sd8;
     shift_b_in = 16'sd2;
     @(posedge clk);
-    // Check: -1 + (8*2) = 15
+    
+    // Wait one more cycle for shift outputs to propagate
+    @(posedge clk);
+    
+    // Check shift outputs
     assert(shift_a_out == 16'sd8)
       else $error("Test3: shift_a_out expected 8, got %0d", shift_a_out);
     assert(shift_b_out == 16'sd2)
       else $error("Test3: shift_b_out expected 2, got %0d", shift_b_out);
+    $display("[%0t] Test3 Shift check: shiftA=%0d, shiftB=%0d", $time, shift_a_out, shift_b_out);
+    
+    // Wait one more cycle for psum to propagate
+    @(posedge clk);
+    
+    // Check: -1 + (8*2) = 15
     assert(psum_out == 32'sd15)
       else $error("Test3: psum_out expected 15, got %0d", psum_out);
-    $display("[%0t] Test3 PASS: psum=%0d, shiftA=%0d, shiftB=%0d",
-             $time, psum_out, shift_a_out, shift_b_out);
+    $display("[%0t] Test3 PASS: psum=%0d", $time, psum_out);
 
     $display("All PE tests passed.");
     $finish;

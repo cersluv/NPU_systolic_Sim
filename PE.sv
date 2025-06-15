@@ -1,8 +1,3 @@
-// PE.sv
-// Processing Element for a systolic array MAC + shift
-// Author: (tu nombre)
-// Date: (fecha)
-
 module PE #(
     parameter int W_A = 16,   // ancho de datos de entrada A/B
     parameter int W_P = 32    // ancho de acumulador (psum)

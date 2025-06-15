@@ -1,0 +1,42 @@
+
+<?xml version="1.0" encoding="UTF-8"?>
+<system name="sdram_system">
+  <component name="clk_0" kind="altera_clock_bridge" version="18.1"/>
+  <component name="sys_sdram_pll" kind="altera_up_avalon_sys_sdram_pll" version="18.1"/>
+  <component name="sdram" kind="altera_avalon_new_sdram_controller" version="18.1"/>
+  <connections>
+    <connection>
+      <from>clk_0.out_clk</from>
+      <to>sys_sdram_pll.ref_clk</to>
+    </connection>
+    <connection>
+      <from>clk_0.out_clk</from>
+      <to>clk_0.in_clk</to>
+    </connection>
+    <connection>
+      <from>clk_0.out_clk</from>
+      <to>sdram.clk</to>
+    </connection>
+    <connection>
+      <from>sys_sdram_pll.sdram_clk</from>
+      <to>sdram.clk</to>
+    </connection>
+    <connection>
+      <from>sys_sdram_pll.reset_source</from>
+      <to>sdram.reset</to>
+    </connection>
+  </connections>
+  <interfaces>
+    <interface name="clk_clk" internal="clk_0.in_clk" type="clock" dir="input"/>
+    <interface name="reset_reset" internal="clk_0.in_reset" type="reset" dir="input"/>
+    <interface name="sdram_addr" internal="sdram.zs_addr" type="conduit" dir="output"/>
+    <interface name="sdram_ba" internal="sdram.zs_ba" type="conduit" dir="output"/>
+    <interface name="sdram_cas_n" internal="sdram.zs_cas_n" type="conduit" dir="output"/>
+    <interface name="sdram_cke" internal="sdram.zs_cke" type="conduit" dir="output"/>
+    <interface name="sdram_cs_n" internal="sdram.zs_cs_n" type="conduit" dir="output"/>
+    <interface name="sdram_dq" internal="sdram.zs_dq" type="conduit" dir="inout"/>
+    <interface name="sdram_dqm" internal="sdram.zs_dqm" type="conduit" dir="output"/>
+    <interface name="sdram_ras_n" internal="sdram.zs_ras_n" type="conduit" dir="output"/>
+    <interface name="sdram_we_n" internal="sdram.zs_we_n" type="conduit" dir="output"/>
+  </interfaces>
+</system>

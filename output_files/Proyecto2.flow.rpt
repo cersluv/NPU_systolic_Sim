@@ -1,6 +1,6 @@
 Flow report for Proyecto2
-Wed Jun 11 19:05:12 2025
-Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
+Sun Jun 15 16:18:44 2025
+Quartus Prime Version 22.1std.0 Build 915 10/25/2022 SC Lite Edition
 
 
 ---------------------
@@ -21,7 +21,7 @@ Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
 ----------------
 ; Legal Notice ;
 ----------------
-Copyright (C) 2020  Intel Corporation. All rights reserved.
+Copyright (C) 2022  Intel Corporation. All rights reserved.
 Your use of Intel Corporation's design tools, logic functions 
 and other software and tools, and any partner logic 
 functions, and any output files from any of the foregoing 
@@ -38,24 +38,24 @@ https://fpgasoftware.intel.com/eula.
 
 
 
-+---------------------------------------------------------------------------+
-; Flow Summary                                                              ;
-+-----------------------------+---------------------------------------------+
-; Flow Status                 ; Successful - Wed Jun 11 19:05:12 2025       ;
-; Quartus Prime Version       ; 20.1.0 Build 711 06/05/2020 SJ Lite Edition ;
-; Revision Name               ; Proyecto2                                   ;
-; Top-level Entity Name       ; SystolicArray4x4                            ;
-; Family                      ; Cyclone V                                   ;
-; Device                      ; 5CSEMA5F31C6                                ;
-; Timing Models               ; Final                                       ;
-; Logic utilization (in ALMs) ; N/A until Partition Merge                   ;
-; Total registers             ; N/A until Partition Merge                   ;
-; Total pins                  ; N/A until Partition Merge                   ;
-; Total virtual pins          ; N/A until Partition Merge                   ;
-; Total block memory bits     ; N/A until Partition Merge                   ;
-; Total PLLs                  ; N/A until Partition Merge                   ;
-; Total DLLs                  ; N/A until Partition Merge                   ;
-+-----------------------------+---------------------------------------------+
++------------------------------------------------------------------------------+
+; Flow Summary                                                                 ;
++-----------------------------+------------------------------------------------+
+; Flow Status                 ; Successful - Sun Jun 15 16:18:44 2025          ;
+; Quartus Prime Version       ; 22.1std.0 Build 915 10/25/2022 SC Lite Edition ;
+; Revision Name               ; Proyecto2                                      ;
+; Top-level Entity Name       ; top_systolic_array                             ;
+; Family                      ; Cyclone V                                      ;
+; Device                      ; 5CSEMA5F31C6                                   ;
+; Timing Models               ; Final                                          ;
+; Logic utilization (in ALMs) ; N/A until Partition Merge                      ;
+; Total registers             ; N/A until Partition Merge                      ;
+; Total pins                  ; N/A until Partition Merge                      ;
+; Total virtual pins          ; N/A until Partition Merge                      ;
+; Total block memory bits     ; N/A until Partition Merge                      ;
+; Total PLLs                  ; N/A until Partition Merge                      ;
+; Total DLLs                  ; N/A until Partition Merge                      ;
++-----------------------------+------------------------------------------------+
 
 
 +-----------------------------------------+
@@ -63,41 +63,49 @@ https://fpgasoftware.intel.com/eula.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 06/11/2025 19:05:06 ;
+; Start date & time ; 06/15/2025 16:18:20 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; Proyecto2           ;
 +-------------------+---------------------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------------------+
-; Flow Non-Default Global Settings                                                                                                       ;
-+--------------------------------------+----------------------------------------+---------------+------------------+---------------------+
-; Assignment Name                      ; Value                                  ; Default Value ; Entity Name      ; Section Id          ;
-+--------------------------------------+----------------------------------------+---------------+------------------+---------------------+
-; COMPILER_SIGNATURE_ID                ; 10995770589189.174969030514496         ; --            ; --               ; --                  ;
-; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --            ; --               ; tb_PE               ;
-; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --            ; --               ; tb_SystolicArray4x4 ;
-; EDA_NATIVELINK_SIMULATION_TEST_BENCH ; tb_SystolicArray4x4                    ; --            ; --               ; eda_simulation      ;
-; EDA_OUTPUT_DATA_FORMAT               ; Verilog Hdl                            ; --            ; --               ; eda_simulation      ;
-; EDA_SIMULATION_TOOL                  ; ModelSim-Altera (Verilog)              ; <None>        ; --               ; --                  ;
-; EDA_TEST_BENCH_ENABLE_STATUS         ; TEST_BENCH_MODE                        ; --            ; --               ; eda_simulation      ;
-; EDA_TEST_BENCH_FILE                  ; tb_PE.sv                               ; --            ; --               ; tb_PE               ;
-; EDA_TEST_BENCH_FILE                  ; tb_SystolicArray4x4.sv                 ; --            ; --               ; tb_SystolicArray4x4 ;
-; EDA_TEST_BENCH_MODULE_NAME           ; tb_PE                                  ; --            ; --               ; tb_PE               ;
-; EDA_TEST_BENCH_MODULE_NAME           ; tb_SystolicArray4x4                    ; --            ; --               ; tb_SystolicArray4x4 ;
-; EDA_TEST_BENCH_NAME                  ; tb_PE                                  ; --            ; --               ; eda_simulation      ;
-; EDA_TEST_BENCH_NAME                  ; tb_SystolicArray4x4                    ; --            ; --               ; eda_simulation      ;
-; EDA_TIME_SCALE                       ; 1 ps                                   ; --            ; --               ; eda_simulation      ;
-; MAX_CORE_JUNCTION_TEMP               ; 85                                     ; --            ; --               ; --                  ;
-; MIN_CORE_JUNCTION_TEMP               ; 0                                      ; --            ; --               ; --                  ;
-; PARTITION_COLOR                      ; -- (Not supported for targeted family) ; --            ; SystolicArray4x4 ; Top                 ;
-; PARTITION_FITTER_PRESERVATION_LEVEL  ; -- (Not supported for targeted family) ; --            ; SystolicArray4x4 ; Top                 ;
-; PARTITION_NETLIST_TYPE               ; -- (Not supported for targeted family) ; --            ; SystolicArray4x4 ; Top                 ;
-; POWER_BOARD_THERMAL_MODEL            ; None (CONSERVATIVE)                    ; --            ; --               ; --                  ;
-; POWER_PRESET_COOLING_SOLUTION        ; 23 MM HEAT SINK WITH 200 LFPM AIRFLOW  ; --            ; --               ; --                  ;
-; PROJECT_OUTPUT_DIRECTORY             ; output_files                           ; --            ; --               ; --                  ;
-; TOP_LEVEL_ENTITY                     ; SystolicArray4x4                       ; Proyecto2     ; --               ; --                  ;
-+--------------------------------------+----------------------------------------+---------------+------------------+---------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------+
+; Flow Non-Default Global Settings                                                                                                           ;
++--------------------------------------+----------------------------------------+---------------+--------------------+-----------------------+
+; Assignment Name                      ; Value                                  ; Default Value ; Entity Name        ; Section Id            ;
++--------------------------------------+----------------------------------------+---------------+--------------------+-----------------------+
+; COMPILER_SIGNATURE_ID                ; 189617196086911.175002590032504        ; --            ; --                 ; --                    ;
+; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --            ; --                 ; tb_PE                 ;
+; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --            ; --                 ; tb_top_systolic_array ;
+; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --            ; --                 ; tb_SystolicArray4x4   ;
+; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --            ; --                 ; tb_SystolicController ;
+; EDA_NATIVELINK_SIMULATION_TEST_BENCH ; tb_top_systolic_array                  ; --            ; --                 ; eda_simulation        ;
+; EDA_OUTPUT_DATA_FORMAT               ; Verilog Hdl                            ; --            ; --                 ; eda_simulation        ;
+; EDA_SIMULATION_TOOL                  ; ModelSim (Verilog)                     ; <None>        ; --                 ; --                    ;
+; EDA_TEST_BENCH_ENABLE_STATUS         ; TEST_BENCH_MODE                        ; --            ; --                 ; eda_simulation        ;
+; EDA_TEST_BENCH_FILE                  ; tb_PE.sv                               ; --            ; --                 ; tb_PE                 ;
+; EDA_TEST_BENCH_FILE                  ; tb_top_systolic_array.sv               ; --            ; --                 ; tb_top_systolic_array ;
+; EDA_TEST_BENCH_FILE                  ; tb_SystolicArray4x4.sv                 ; --            ; --                 ; tb_SystolicArray4x4   ;
+; EDA_TEST_BENCH_FILE                  ; tb_SystolicController.sv               ; --            ; --                 ; tb_SystolicController ;
+; EDA_TEST_BENCH_MODULE_NAME           ; tb_PE                                  ; --            ; --                 ; tb_PE                 ;
+; EDA_TEST_BENCH_MODULE_NAME           ; tb_top_systolic_array                  ; --            ; --                 ; tb_top_systolic_array ;
+; EDA_TEST_BENCH_MODULE_NAME           ; tb_SystolicArray4x4                    ; --            ; --                 ; tb_SystolicArray4x4   ;
+; EDA_TEST_BENCH_MODULE_NAME           ; tb_SystolicController                  ; --            ; --                 ; tb_SystolicController ;
+; EDA_TEST_BENCH_NAME                  ; tb_PE                                  ; --            ; --                 ; eda_simulation        ;
+; EDA_TEST_BENCH_NAME                  ; tb_SystolicArray4x4                    ; --            ; --                 ; eda_simulation        ;
+; EDA_TEST_BENCH_NAME                  ; tb_SystolicController                  ; --            ; --                 ; eda_simulation        ;
+; EDA_TEST_BENCH_NAME                  ; tb_top_systolic_array                  ; --            ; --                 ; eda_simulation        ;
+; EDA_TIME_SCALE                       ; 1 ps                                   ; --            ; --                 ; eda_simulation        ;
+; MAX_CORE_JUNCTION_TEMP               ; 85                                     ; --            ; --                 ; --                    ;
+; MIN_CORE_JUNCTION_TEMP               ; 0                                      ; --            ; --                 ; --                    ;
+; PARTITION_COLOR                      ; -- (Not supported for targeted family) ; --            ; top_systolic_array ; Top                   ;
+; PARTITION_FITTER_PRESERVATION_LEVEL  ; -- (Not supported for targeted family) ; --            ; top_systolic_array ; Top                   ;
+; PARTITION_NETLIST_TYPE               ; -- (Not supported for targeted family) ; --            ; top_systolic_array ; Top                   ;
+; POWER_BOARD_THERMAL_MODEL            ; None (CONSERVATIVE)                    ; --            ; --                 ; --                    ;
+; POWER_PRESET_COOLING_SOLUTION        ; 23 MM HEAT SINK WITH 200 LFPM AIRFLOW  ; --            ; --                 ; --                    ;
+; PROJECT_OUTPUT_DIRECTORY             ; output_files                           ; --            ; --                 ; --                    ;
+; TOP_LEVEL_ENTITY                     ; top_systolic_array                     ; Proyecto2     ; --                 ; --                    ;
++--------------------------------------+----------------------------------------+---------------+--------------------+-----------------------+
 
 
 +----------------------------------------------------------------------------------------------------------------------------+
@@ -105,8 +113,8 @@ https://fpgasoftware.intel.com/eula.
 +------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name            ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Elaboration ; 00:00:07     ; 1.0                     ; 4773 MB             ; 00:00:16                           ;
-; Total                  ; 00:00:07     ; --                      ; --                  ; 00:00:16                           ;
+; Analysis & Elaboration ; 00:00:25     ; 1.0                     ; 4807 MB             ; 00:00:40                           ;
+; Total                  ; 00:00:25     ; --                      ; --                  ; 00:00:40                           ;
 +------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -115,7 +123,7 @@ https://fpgasoftware.intel.com/eula.
 +------------------------+------------------+------------+------------+----------------+
 ; Module Name            ; Machine Hostname ; OS Name    ; OS Version ; Processor type ;
 +------------------------+------------------+------------+------------+----------------+
-; Analysis & Elaboration ; DESKTOP-VJFK62D  ; Windows 10 ; 10.0       ; x86_64         ;
+; Analysis & Elaboration ; DESKTOP-2DV2MKL  ; Windows 10 ; 10.0       ; x86_64         ;
 +------------------------+------------------+------------+------------+----------------+
 
 
