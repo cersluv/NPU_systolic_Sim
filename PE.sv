@@ -1,6 +1,8 @@
 module PE #(
-    parameter int W_A = 16,   // ancho de datos de entrada A/B
-    parameter int W_P = 32    // ancho de acumulador (psum)
+    // ancho de datos de entrada A/B
+	 parameter int W_A = 16,   
+    // ancho de acumulador (psum)
+	 parameter int W_P = 32    
 )(
     input  logic                  clk,
     input  logic                  rst_n,
@@ -8,8 +10,8 @@ module PE #(
     // datos de inyección (válidos solo en columna 0/fila 0)
     input  logic signed [W_A-1:0] in_a,
     input  logic signed [W_A-1:0] in_b,
-    input  logic                  load_a,    // 1 = inyecta in_a; 0 = toma shift_a_in
-    input  logic                  load_b,    // 1 = inyecta in_b; 0 = toma shift_b_in
+    input  logic                  load_a,
+    input  logic                  load_b,
 
     // entradas de shift desde vecinos
     input  logic signed [W_A-1:0] shift_a_in,

@@ -1,8 +1,3 @@
-// SystolicArray4x4.sv
-// 4×4 systolic array: each PE performs MAC and shifts A→East, B→South
-// Author: (tu nombre)
-// Date: (fecha)
-
 module SystolicArray4x4 #(
   parameter int W_A = 16,          // ancho de datos de entrada A/B
   parameter int W_P = 32           // ancho de acumulador (psum)

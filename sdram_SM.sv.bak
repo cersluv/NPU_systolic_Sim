@@ -1,22 +1,19 @@
+// sdram_SM.sv
+// SM simplificada para el controlador SDRAM
+// Maneja automaticamente las senales de control y temporizacion
+
 module sdram_SM (
     input  logic           clk,
     input  logic           reset_n,
     
     // Interfaz simplificada hacia el usuario
-    // Pulso para iniciar escritura
-	 input  logic           start_write,    
-    // Pulso para iniciar lectura
-	 input  logic           start_read,     
-    // Direccion de memoria
-	 input  logic [24:0]    address,        
-    // Datos a escribir
-	 input  logic [15:0]    write_data,     
-    // Datos leidos
-	 output logic [15:0]    read_data,      
-    // Senal de operacion completada
-	 output logic           operation_done, 
-    // Indica si hay operacion en curso
-	 output logic           busy,           
+    input  logic           start_write,    // Pulso para iniciar escritura
+    input  logic           start_read,     // Pulso para iniciar lectura
+    input  logic [24:0]    address,        // Direccion de memoria
+    input  logic [15:0]    write_data,     // Datos a escribir
+    output logic [15:0]    read_data,      // Datos leidos
+    output logic           operation_done, // Senal de operacion completada
+    output logic           busy,           // Indica si hay operacion en curso
     
     // Conexion hacia el controlador SDRAM
     output logic [24:0]    sdram_address,
@@ -32,31 +29,21 @@ module sdram_SM (
 
     // Estados de la mÃ¡quina de estados
     typedef enum logic [2:0] {
-        // Estado inactivo, esperando comandos
-		  IDLE,
-        // Iniciando operacion de escritura
-		  WRITE_START,
-        // Esperando completar escritura
-		  WRITE_WAIT,
-        // Iniciando operacion de lectura
-		  READ_START,
-        // Esperando datos de lectura
-		  READ_WAIT,
-        // Operacion completada
-		  DONE
+        IDLE,       // Estado inactivo, esperando comandos
+        WRITE_START, // Iniciando operacion de escritura
+        WRITE_WAIT,  // Esperando completar escritura
+        READ_START,  // Iniciando operacion de lectura
+        READ_WAIT,   // Esperando datos de lectura
+        DONE         // Operacion completada
     } state_t;
     
     state_t current_state, next_state;
     
     // Registros internos
-    // Registro de direccion
-	 logic [24:0] addr_reg;
-    // Registro de datos a escribir
-	 logic [15:0] data_reg;          
-    // Registro de datos leidos
-	 logic [15:0] read_data_reg;     
-    // Registro de operacion completada
-	 logic operation_done_reg;       
+    logic [24:0] addr_reg;          // Registro de direccion
+    logic [15:0] data_reg;          // Registro de datos a escribir
+    logic [15:0] read_data_reg;     // Registro de datos leidos
+    logic operation_done_reg;       // Registro de operacion completada
     
     // Logica secuencial - actualiza registros en cada ciclo de reloj
     always_ff @(posedge clk or negedge reset_n) begin

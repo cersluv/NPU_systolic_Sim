@@ -1,5 +1,3 @@
-// SystolicController.sv - VERSIÓN CORREGIDA
-// Controlador para arreglo sistólico 4x4 que recibe matrices como entrada
 module SystolicController #(
   parameter int W_A = 16,
   parameter int W_P = 32

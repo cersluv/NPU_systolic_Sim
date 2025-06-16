@@ -1,9 +1,3 @@
-//------------------------------------------------------------------------------
-// Module: matrix_multiplication_system_4x4
-// Descripción: Sistema con arreglo sistólico 4x4 e interfaz SDRAM
-// VERSIÓN CORREGIDA - Pasa matrices correctamente al arreglo sistólico
-//------------------------------------------------------------------------------
-
 module prueba (
     input  logic           clk_clk,
     input  logic           reset_reset_n,
