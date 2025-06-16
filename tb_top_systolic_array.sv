@@ -13,19 +13,18 @@ module tb_top_systolic_array;
   logic signed [W_P-1:0] result [0:3][0:3];
 
   // Matrices esperadas (copiar de SystolicController)
-  logic signed [W_A-1:0] A[0:3][0:3] = '{
-    '{1, 2, 3, 4},
-    '{5, 6, 7, 8},
-    '{9, 10, 11, 12},
-    '{13, 14, 15, 16}
-  };
-
-  logic signed [W_A-1:0] B[0:3][0:3] = '{
-    '{1, 5, 9, 13},
-    '{2, 6, 10, 14},
-    '{3, 7, 11, 15},
-    '{4, 8, 12, 16}
-  };
+	logic signed [W_A-1:0] A[0:3][0:3] = '{
+	  '{2, 1, 3, 0},
+	  '{1, 2, 0, 1},
+	  '{0, 1, 2, 3},
+	  '{3, 0, 1, 2}
+	};
+	logic signed [W_A-1:0] B[0:3][0:3] = '{
+	  '{1, 2, 1, 3},
+	  '{2, 1, 3, 0},
+	  '{1, 3, 0, 2},
+	  '{0, 1, 2, 1}
+	};
 
   logic signed [W_P-1:0] expected [0:3][0:3];
 

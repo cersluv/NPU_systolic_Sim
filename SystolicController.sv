@@ -39,17 +39,17 @@ module SystolicController #(
   end
   wire start_sync = start_d1 & ~start_d2;
 
-  initial begin
-    A[0] = '{1, 2, 3, 4};
-    A[1] = '{5, 6, 7, 8};
-    A[2] = '{9, 10, 11, 12};
-    A[3] = '{13, 14, 15, 16};
+	initial begin
+	  A[0] = '{2, 1, 3, 0};
+	  A[1] = '{1, 2, 0, 1};
+	  A[2] = '{0, 1, 2, 3};
+	  A[3] = '{3, 0, 1, 2};
 
-    B[0] = '{1, 5, 9, 13};
-    B[1] = '{2, 6, 10, 14};
-    B[2] = '{3, 7, 11, 15};
-    B[3] = '{4, 8, 12, 16};
-  end
+	  B[0] = '{1, 2, 1, 3};
+	  B[1] = '{2, 1, 3, 0};
+	  B[2] = '{1, 3, 0, 2};
+	  B[3] = '{0, 1, 2, 1};
+	end
 
   always_ff @(posedge clk or negedge rst_n) begin
     if (!rst_n) begin
@@ -59,6 +59,8 @@ module SystolicController #(
       state <= next_state;
       if (state == INJECT || state == WAIT)
         t <= t + 1;
+      else if (state == IDLE)
+        t <= 0;  // Reset counter when in IDLE
     end
   end
 
@@ -72,7 +74,7 @@ module SystolicController #(
         if (start_sync) next_state = INJECT;
       INJECT: begin
         busy = 1;
-        if (t == 7) next_state = WAIT;
+        if (t == 6) next_state = WAIT;  // Cambio: era 7, ahora 6
       end
       WAIT: begin
         busy = 1;
@@ -85,8 +87,23 @@ module SystolicController #(
 
   always_comb begin
     for (int i = 0; i < 4; i++) begin
-      injectA[i] = (t >= i && t - i < 4) ? A[i][t - i] : 0;
-      injectB[i] = (t >= i && t - i < 4) ? B[t - i][i] : 0;
+      // Solo inyectar datos válidos durante los primeros 7 ciclos (t=0 a t=6)
+      if (state == INJECT && t >= i && t - i < 4) begin
+        injectA[i] = A[i][t - i];
+        injectB[i] = B[t - i][i];
+      end else begin
+        injectA[i] = 0;
+        injectB[i] = 0;
+      end
+    end
+  end
+
+  // Debug outputs
+  always @(posedge clk) begin
+    if (state == INJECT) begin
+      $display("t=%0d: injectA={%0d,%0d,%0d,%0d}, injectB={%0d,%0d,%0d,%0d}", 
+               t, injectA[0], injectA[1], injectA[2], injectA[3],
+               injectB[0], injectB[1], injectB[2], injectB[3]);
     end
   end
 

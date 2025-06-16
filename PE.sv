@@ -26,27 +26,36 @@ module PE #(
     // registros internos
     logic signed [W_A-1:0] a_reg, b_reg;
     logic signed [W_P-1:0] psum_reg;
+    
+    // Señales combinacionales para los valores a usar
+    logic signed [W_A-1:0] a_current, b_current;
+    
+    // Determinar qué valores usar en este ciclo
+    assign a_current = load_a ? in_a : shift_a_in;
+    assign b_current = load_b ? in_b : shift_b_in;
 
-    // Lógica secuencial: inyección/shift + MAC
+    // Lógica secuencial
     always_ff @(posedge clk or negedge rst_n) begin
         if (!rst_n) begin
             a_reg    <= '0;
             b_reg    <= '0;
             psum_reg <= '0;
         end else begin
-            // Inyecta nuevo dado si corresponde, o toma el desplazado
-            a_reg    <= load_a ? in_a    : shift_a_in;
-            b_reg    <= load_b ? in_b    : shift_b_in;
-            // MAC: acumula producto
-            psum_reg <= psum_reg + a_reg * b_reg;
+            // Actualizar registros de shift
+            a_reg <= a_current;
+            b_reg <= b_current;
+            
+            // MAC: solo acumular si ambos valores son diferentes de cero
+            // Esto evita acumulaciones espurias durante la inicialización
+            if (a_current != 0 && b_current != 0) begin
+                psum_reg <= psum_reg + a_current * b_current;
+            end
         end
     end
 
-    // Conexión a las salidas de shift
+    // Conexión a las salidas
     assign shift_a_out = a_reg;
     assign shift_b_out = b_reg;
-
-    // Exposición de la suma parcial
     assign psum_out    = psum_reg;
 
 endmodule
