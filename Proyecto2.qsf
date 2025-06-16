@@ -39,10 +39,10 @@
 
 set_global_assignment -name FAMILY "Cyclone V"
 set_global_assignment -name DEVICE 5CSEMA5F31C6
-set_global_assignment -name TOP_LEVEL_ENTITY top_systolic_array
+set_global_assignment -name TOP_LEVEL_ENTITY prueba
 set_global_assignment -name ORIGINAL_QUARTUS_VERSION 20.1.0
 set_global_assignment -name PROJECT_CREATION_TIME_DATE "17:16:51  JUNE 11, 2025"
-set_global_assignment -name LAST_QUARTUS_VERSION "22.1std.0 Lite Edition"
+set_global_assignment -name LAST_QUARTUS_VERSION "18.1.0 Lite Edition"
 set_global_assignment -name PROJECT_OUTPUT_DIRECTORY output_files
 set_global_assignment -name BOARD "DE1-SoC Board"
 set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
@@ -63,6 +63,70 @@ set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME tb_SystolicArray4x4 -sect
 set_global_assignment -name EDA_TEST_BENCH_NAME tb_SystolicController -section_id eda_simulation
 set_global_assignment -name EDA_DESIGN_INSTANCE_NAME NA -section_id tb_SystolicController
 set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME tb_SystolicController -section_id tb_SystolicController
+set_global_assignment -name EDA_TEST_BENCH_NAME tb_top_systolic_array -section_id eda_simulation
+set_global_assignment -name EDA_DESIGN_INSTANCE_NAME NA -section_id tb_top_systolic_array
+set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME tb_top_systolic_array -section_id tb_top_systolic_array
+set_global_assignment -name EDA_TEST_BENCH_FILE tb_PE.sv -section_id tb_PE
+set_global_assignment -name EDA_TEST_BENCH_FILE tb_SystolicArray4x4.sv -section_id tb_SystolicArray4x4
+set_global_assignment -name EDA_TEST_BENCH_FILE tb_SystolicController.sv -section_id tb_SystolicController
+set_global_assignment -name EDA_TEST_BENCH_FILE tb_top_systolic_array.sv -section_id tb_top_systolic_array
+set_location_assignment PIN_AK14 -to wire_addr[0]
+set_location_assignment PIN_AH14 -to wire_addr[1]
+set_location_assignment PIN_AG15 -to wire_addr[2]
+set_location_assignment PIN_AE14 -to wire_addr[3]
+set_location_assignment PIN_AB15 -to wire_addr[4]
+set_location_assignment PIN_AC14 -to wire_addr[5]
+set_location_assignment PIN_AD14 -to wire_addr[6]
+set_location_assignment PIN_AF15 -to wire_addr[7]
+set_location_assignment PIN_AH15 -to wire_addr[8]
+set_location_assignment PIN_AG13 -to wire_addr[9]
+set_location_assignment PIN_AG12 -to wire_addr[10]
+set_location_assignment PIN_AH13 -to wire_addr[11]
+set_location_assignment PIN_AJ14 -to wire_addr[12]
+set_location_assignment PIN_AK6 -to wire_dq[0]
+set_location_assignment PIN_AJ7 -to wire_dq[1]
+set_location_assignment PIN_AK7 -to wire_dq[2]
+set_location_assignment PIN_AK8 -to wire_dq[3]
+set_location_assignment PIN_AK9 -to wire_dq[4]
+set_location_assignment PIN_AG10 -to wire_dq[5]
+set_location_assignment PIN_AK11 -to wire_dq[6]
+set_location_assignment PIN_AJ11 -to wire_dq[7]
+set_location_assignment PIN_AH10 -to wire_dq[8]
+set_location_assignment PIN_AJ10 -to wire_dq[9]
+set_location_assignment PIN_AJ9 -to wire_dq[10]
+set_location_assignment PIN_AH9 -to wire_dq[11]
+set_location_assignment PIN_AH8 -to wire_dq[12]
+set_location_assignment PIN_AH7 -to wire_dq[13]
+set_location_assignment PIN_AJ6 -to wire_dq[14]
+set_location_assignment PIN_AJ5 -to wire_dq[15]
+set_location_assignment PIN_AF13 -to wire_ba[0]
+set_location_assignment PIN_AJ12 -to wire_ba[1]
+set_location_assignment PIN_AB13 -to wire_dqm[0]
+set_location_assignment PIN_AK12 -to wire_dqm[1]
+set_location_assignment PIN_AE13 -to wire_ras_n
+set_location_assignment PIN_AF11 -to wire_cas_n
+set_location_assignment PIN_AK13 -to wire_cke
+set_location_assignment PIN_AA13 -to wire_we_n
+set_location_assignment PIN_AG11 -to wire_cs_n
+set_location_assignment PIN_AF14 -to clk_clk
+set_location_assignment PIN_AB12 -to reset_reset_n
+set_location_assignment PIN_AE26 -to hex0[0]
+set_location_assignment PIN_AE27 -to hex0[1]
+set_location_assignment PIN_AE28 -to hex0[2]
+set_location_assignment PIN_AG27 -to hex0[3]
+set_location_assignment PIN_AF28 -to hex0[4]
+set_location_assignment PIN_AG28 -to hex0[5]
+set_location_assignment PIN_AH28 -to hex0[6]
+set_location_assignment PIN_AJ29 -to hex1[0]
+set_location_assignment PIN_AH29 -to hex1[1]
+set_location_assignment PIN_AH30 -to hex1[2]
+set_location_assignment PIN_AG30 -to hex1[3]
+set_location_assignment PIN_AF29 -to hex1[4]
+set_location_assignment PIN_AF30 -to hex1[5]
+set_location_assignment PIN_AD27 -to hex1[6]
+set_global_assignment -name SYSTEMVERILOG_FILE prueba.sv
+set_global_assignment -name SYSTEMVERILOG_FILE top.sv
+set_global_assignment -name QIP_FILE sdram/synthesis/sdram.qip
 set_global_assignment -name SYSTEMVERILOG_FILE tb_SystolicController.sv
 set_global_assignment -name SYSTEMVERILOG_FILE PE.sv
 set_global_assignment -name SYSTEMVERILOG_FILE tb_PE.sv
@@ -71,14 +135,24 @@ set_global_assignment -name SYSTEMVERILOG_FILE tb_SystolicArray4x4.sv
 set_global_assignment -name SYSTEMVERILOG_FILE SystolicController.sv
 set_global_assignment -name SYSTEMVERILOG_FILE top_systolic_array.sv
 set_global_assignment -name SYSTEMVERILOG_FILE tb_top_systolic_array.sv
-set_global_assignment -name EDA_TEST_BENCH_NAME tb_top_systolic_array -section_id eda_simulation
-set_global_assignment -name EDA_DESIGN_INSTANCE_NAME NA -section_id tb_top_systolic_array
-set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME tb_top_systolic_array -section_id tb_top_systolic_array
+set_global_assignment -name SYSTEMVERILOG_FILE sdram_SM.sv
+set_global_assignment -name SYSTEMVERILOG_FILE tb_sdram.sv
 set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
 set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
 set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
-set_global_assignment -name EDA_TEST_BENCH_FILE tb_PE.sv -section_id tb_PE
-set_global_assignment -name EDA_TEST_BENCH_FILE tb_SystolicArray4x4.sv -section_id tb_SystolicArray4x4
-set_global_assignment -name EDA_TEST_BENCH_FILE tb_SystolicController.sv -section_id tb_SystolicController
-set_global_assignment -name EDA_TEST_BENCH_FILE tb_top_systolic_array.sv -section_id tb_top_systolic_array
+set_location_assignment PIN_AB22 -to hex3[6]
+set_location_assignment PIN_AB25 -to hex3[5]
+set_location_assignment PIN_AB28 -to hex3[4]
+set_location_assignment PIN_AC25 -to hex3[3]
+set_location_assignment PIN_AD25 -to hex3[2]
+set_location_assignment PIN_AC27 -to hex3[1]
+set_location_assignment PIN_AD26 -to hex3[0]
+set_location_assignment PIN_AC30 -to hex2[6]
+set_location_assignment PIN_AC29 -to hex2[5]
+set_location_assignment PIN_AD30 -to hex2[4]
+set_location_assignment PIN_AC28 -to hex2[3]
+set_location_assignment PIN_AD29 -to hex2[2]
+set_location_assignment PIN_AE29 -to hex2[1]
+set_location_assignment PIN_AB23 -to hex2[0]
+set_location_assignment PIN_Y16 -to btn2
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

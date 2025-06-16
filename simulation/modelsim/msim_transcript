@@ -11,10 +11,10 @@
 # vmap altera_ver ./verilog_libs/altera_ver 
 # Copying C:/intelFPGA/20.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
 # Modifying modelsim.ini
-# vlog -vlog01compat -work altera_ver {c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/altera_primitives.v}
+# vlog -vlog01compat -work altera_ver {c:/intelfpga_lite/18.1/quartus/eda/sim_lib/altera_primitives.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 16:19:29 on Jun 15,2025
-# vlog -reportprogress 300 -vlog01compat -work altera_ver c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/altera_primitives.v 
+# Start time: 07:52:18 on Jun 16,2025
+# vlog -reportprogress 300 -vlog01compat -work altera_ver c:/intelfpga_lite/18.1/quartus/eda/sim_lib/altera_primitives.v 
 # -- Compiling module global
 # -- Compiling module carry
 # -- Compiling module cascade
@@ -95,7 +95,7 @@
 # 	alt_iobuf_diff
 # 	alt_bidir_diff
 # 	alt_bidir_buf
-# End time: 16:19:31 on Jun 15,2025, Elapsed time: 0:00:02
+# End time: 07:52:19 on Jun 16,2025, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # 
 # vlib verilog_libs/lpm_ver
@@ -104,10 +104,10 @@
 # Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
 # vmap lpm_ver ./verilog_libs/lpm_ver 
 # Modifying modelsim.ini
-# vlog -vlog01compat -work lpm_ver {c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/220model.v}
+# vlog -vlog01compat -work lpm_ver {c:/intelfpga_lite/18.1/quartus/eda/sim_lib/220model.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 16:19:33 on Jun 15,2025
-# vlog -reportprogress 300 -vlog01compat -work lpm_ver c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/220model.v 
+# Start time: 07:52:19 on Jun 16,2025
+# vlog -reportprogress 300 -vlog01compat -work lpm_ver c:/intelfpga_lite/18.1/quartus/eda/sim_lib/220model.v 
 # -- Compiling module LPM_MEMORY_INITIALIZATION
 # -- Compiling module LPM_HINT_EVALUATION
 # -- Compiling module LPM_DEVICE_FAMILIES
@@ -170,7 +170,7 @@
 # 	lpm_inpad
 # 	lpm_outpad
 # 	lpm_bipad
-# End time: 16:19:34 on Jun 15,2025, Elapsed time: 0:00:01
+# End time: 07:52:20 on Jun 16,2025, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # 
 # vlib verilog_libs/sgate_ver
@@ -179,10 +179,10 @@
 # Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
 # vmap sgate_ver ./verilog_libs/sgate_ver 
 # Modifying modelsim.ini
-# vlog -vlog01compat -work sgate_ver {c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/sgate.v}
+# vlog -vlog01compat -work sgate_ver {c:/intelfpga_lite/18.1/quartus/eda/sim_lib/sgate.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 16:19:36 on Jun 15,2025
-# vlog -reportprogress 300 -vlog01compat -work sgate_ver c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/sgate.v 
+# Start time: 07:52:20 on Jun 16,2025
+# vlog -reportprogress 300 -vlog01compat -work sgate_ver c:/intelfpga_lite/18.1/quartus/eda/sim_lib/sgate.v 
 # -- Compiling module oper_add
 # -- Compiling module oper_addsub
 # -- Compiling module mux21
@@ -223,7 +223,7 @@
 # 	oper_decoder
 # 	oper_bus_mux
 # 	oper_latch
-# End time: 16:19:37 on Jun 15,2025, Elapsed time: 0:00:01
+# End time: 07:52:21 on Jun 16,2025, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # 
 # vlib verilog_libs/altera_mf_ver
@@ -232,10 +232,10 @@
 # Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
 # vmap altera_mf_ver ./verilog_libs/altera_mf_ver 
 # Modifying modelsim.ini
-# vlog -vlog01compat -work altera_mf_ver {c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/altera_mf.v}
+# vlog -vlog01compat -work altera_mf_ver {c:/intelfpga_lite/18.1/quartus/eda/sim_lib/altera_mf.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 16:19:38 on Jun 15,2025
-# vlog -reportprogress 300 -vlog01compat -work altera_mf_ver c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/altera_mf.v 
+# Start time: 07:52:22 on Jun 16,2025
+# vlog -reportprogress 300 -vlog01compat -work altera_mf_ver c:/intelfpga_lite/18.1/quartus/eda/sim_lib/altera_mf.v 
 # -- Compiling module lcell
 # -- Compiling module ALTERA_MF_MEMORY_INITIALIZATION
 # -- Compiling module ALTERA_MF_HINT_EVALUATION
@@ -364,7 +364,7 @@
 # 	alt_fault_injection
 # 	sld_virtual_jtag_basic
 # 	altsource_probe
-# End time: 16:19:44 on Jun 15,2025, Elapsed time: 0:00:06
+# End time: 07:52:25 on Jun 16,2025, Elapsed time: 0:00:03
 # Errors: 0, Warnings: 0
 # 
 # vlib verilog_libs/altera_lnsim_ver
@@ -373,10 +373,10 @@
 # Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
 # vmap altera_lnsim_ver ./verilog_libs/altera_lnsim_ver 
 # Modifying modelsim.ini
-# vlog -sv -work altera_lnsim_ver {c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/altera_lnsim.sv}
+# vlog -sv -work altera_lnsim_ver {c:/intelfpga_lite/18.1/quartus/eda/sim_lib/altera_lnsim.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 16:19:45 on Jun 15,2025
-# vlog -reportprogress 300 -sv -work altera_lnsim_ver c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/altera_lnsim.sv 
+# Start time: 07:52:26 on Jun 16,2025
+# vlog -reportprogress 300 -sv -work altera_lnsim_ver c:/intelfpga_lite/18.1/quartus/eda/sim_lib/altera_lnsim.sv 
 # -- Compiling package altera_lnsim_functions
 # -- Compiling package altera_generic_pll_functions
 # -- Compiling module generic_pll
@@ -458,7 +458,7 @@
 # 	altera_iopll
 # 	fourteennm_altera_iopll
 # 	fourteennm_simple_iopll
-# End time: 16:19:47 on Jun 15,2025, Elapsed time: 0:00:02
+# End time: 07:52:28 on Jun 16,2025, Elapsed time: 0:00:02
 # Errors: 0, Warnings: 0
 # 
 # vlib verilog_libs/cyclonev_ver
@@ -467,36 +467,26 @@
 # Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
 # vmap cyclonev_ver ./verilog_libs/cyclonev_ver 
 # Modifying modelsim.ini
-# vlog -vlog01compat -work cyclonev_ver {c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/mentor/cyclonev_atoms_ncrypt.v}
+# vlog -vlog01compat -work cyclonev_ver {c:/intelfpga_lite/18.1/quartus/eda/sim_lib/mentor/cyclonev_atoms_ncrypt.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 16:19:48 on Jun 15,2025
-# vlog -reportprogress 300 -vlog01compat -work cyclonev_ver c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/mentor/cyclonev_atoms_ncrypt.v 
-# ** Warning: (vlog-2083) <protected>(<protected>): Carriage return (0x0D) is not followed by a newline (0x0A).
-# ** Warning: (vlog-2083) <protected>(<protected>): Carriage return (0x0D) is not followed by a newline (0x0A).
-# ** Warning: (vlog-2083) <protected>(<protected>): Carriage return (0x0D) is not followed by a newline (0x0A).
-# ** Warning: (vlog-2083) <protected>(<protected>): Carriage return (0x0D) is not followed by a newline (0x0A).
-# ** Warning: (vlog-2083) <protected>(<protected>): Carriage return (0x0D) is not followed by a newline (0x0A).
-# ** Warning: (vlog-2083) <protected>(<protected>): Carriage return (0x0D) is not followed by a newline (0x0A).
-# ** Warning: (vlog-2083) <protected>(<protected>): Carriage return (0x0D) is not followed by a newline (0x0A).
-# ** Warning: (vlog-2083) <protected>(<protected>): Carriage return (0x0D) is not followed by a newline (0x0A).
-# ** Warning: (vlog-2083) <protected>(<protected>): Carriage return (0x0D) is not followed by a newline (0x0A).
-# ** Warning: (vlog-2083) <protected>(<protected>): Carriage return (0x0D) is not followed by a newline (0x0A).
+# Start time: 07:52:28 on Jun 16,2025
+# vlog -reportprogress 300 -vlog01compat -work cyclonev_ver c:/intelfpga_lite/18.1/quartus/eda/sim_lib/mentor/cyclonev_atoms_ncrypt.v 
 # 
 # Top level modules:
-# End time: 16:19:59 on Jun 15,2025, Elapsed time: 0:00:11
-# Errors: 0, Warnings: 10
-# vlog -vlog01compat -work cyclonev_ver {c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/mentor/cyclonev_hmi_atoms_ncrypt.v}
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 16:19:59 on Jun 15,2025
-# vlog -reportprogress 300 -vlog01compat -work cyclonev_ver c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/mentor/cyclonev_hmi_atoms_ncrypt.v 
-# 
-# Top level modules:
-# End time: 16:20:02 on Jun 15,2025, Elapsed time: 0:00:03
+# End time: 07:52:31 on Jun 16,2025, Elapsed time: 0:00:03
 # Errors: 0, Warnings: 0
-# vlog -vlog01compat -work cyclonev_ver {c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/cyclonev_atoms.v}
+# vlog -vlog01compat -work cyclonev_ver {c:/intelfpga_lite/18.1/quartus/eda/sim_lib/mentor/cyclonev_hmi_atoms_ncrypt.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 16:20:02 on Jun 15,2025
-# vlog -reportprogress 300 -vlog01compat -work cyclonev_ver c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/cyclonev_atoms.v 
+# Start time: 07:52:31 on Jun 16,2025
+# vlog -reportprogress 300 -vlog01compat -work cyclonev_ver c:/intelfpga_lite/18.1/quartus/eda/sim_lib/mentor/cyclonev_hmi_atoms_ncrypt.v 
+# 
+# Top level modules:
+# End time: 07:52:34 on Jun 16,2025, Elapsed time: 0:00:03
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work cyclonev_ver {c:/intelfpga_lite/18.1/quartus/eda/sim_lib/cyclonev_atoms.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 07:52:34 on Jun 16,2025
+# vlog -reportprogress 300 -vlog01compat -work cyclonev_ver c:/intelfpga_lite/18.1/quartus/eda/sim_lib/cyclonev_atoms.v 
 # -- Compiling UDP CYCLONEV_PRIM_DFFE
 # -- Compiling UDP CYCLONEV_PRIM_DFFEAS
 # -- Compiling UDP CYCLONEV_PRIM_DFFEAS_HIGH
@@ -635,7 +625,7 @@
 # 	cyclonev_mem_phy
 # 	cyclonev_oscillator
 # 	cyclonev_hps_interface_fpga2sdram
-# End time: 16:20:04 on Jun 15,2025, Elapsed time: 0:00:02
+# End time: 07:52:37 on Jun 16,2025, Elapsed time: 0:00:03
 # Errors: 0, Warnings: 0
 # 
 # vlib verilog_libs/cyclonev_hssi_ver
@@ -644,18 +634,18 @@
 # Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
 # vmap cyclonev_hssi_ver ./verilog_libs/cyclonev_hssi_ver 
 # Modifying modelsim.ini
-# vlog -vlog01compat -work cyclonev_hssi_ver {c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/mentor/cyclonev_hssi_atoms_ncrypt.v}
+# vlog -vlog01compat -work cyclonev_hssi_ver {c:/intelfpga_lite/18.1/quartus/eda/sim_lib/mentor/cyclonev_hssi_atoms_ncrypt.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 16:20:06 on Jun 15,2025
-# vlog -reportprogress 300 -vlog01compat -work cyclonev_hssi_ver c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/mentor/cyclonev_hssi_atoms_ncrypt.v 
+# Start time: 07:52:38 on Jun 16,2025
+# vlog -reportprogress 300 -vlog01compat -work cyclonev_hssi_ver c:/intelfpga_lite/18.1/quartus/eda/sim_lib/mentor/cyclonev_hssi_atoms_ncrypt.v 
 # 
 # Top level modules:
-# End time: 16:20:09 on Jun 15,2025, Elapsed time: 0:00:03
+# End time: 07:52:41 on Jun 16,2025, Elapsed time: 0:00:03
 # Errors: 0, Warnings: 0
-# vlog -vlog01compat -work cyclonev_hssi_ver {c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/cyclonev_hssi_atoms.v}
+# vlog -vlog01compat -work cyclonev_hssi_ver {c:/intelfpga_lite/18.1/quartus/eda/sim_lib/cyclonev_hssi_atoms.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 16:20:09 on Jun 15,2025
-# vlog -reportprogress 300 -vlog01compat -work cyclonev_hssi_ver c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/cyclonev_hssi_atoms.v 
+# Start time: 07:52:41 on Jun 16,2025
+# vlog -reportprogress 300 -vlog01compat -work cyclonev_hssi_ver c:/intelfpga_lite/18.1/quartus/eda/sim_lib/cyclonev_hssi_atoms.v 
 # -- Compiling module cyclonev_hssi_8g_pcs_aggregate
 # -- Compiling module cyclonev_hssi_8g_rx_pcs
 # -- Compiling module cyclonev_hssi_8g_tx_pcs
@@ -754,7 +744,7 @@
 # 	arriav_hssi_avmm_interface
 # 	arriav_hssi_pma_hi_pmaif
 # 	arriav_hssi_pma_hi_xcvrif
-# End time: 16:20:10 on Jun 15,2025, Elapsed time: 0:00:01
+# End time: 07:52:42 on Jun 16,2025, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # 
 # vlib verilog_libs/cyclonev_pcie_hip_ver
@@ -763,30 +753,24 @@
 # Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
 # vmap cyclonev_pcie_hip_ver ./verilog_libs/cyclonev_pcie_hip_ver 
 # Modifying modelsim.ini
-# vlog -vlog01compat -work cyclonev_pcie_hip_ver {c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/mentor/cyclonev_pcie_hip_atoms_ncrypt.v}
+# vlog -vlog01compat -work cyclonev_pcie_hip_ver {c:/intelfpga_lite/18.1/quartus/eda/sim_lib/mentor/cyclonev_pcie_hip_atoms_ncrypt.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 16:20:12 on Jun 15,2025
-# vlog -reportprogress 300 -vlog01compat -work cyclonev_pcie_hip_ver c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/mentor/cyclonev_pcie_hip_atoms_ncrypt.v 
-# ** Warning: (vlog-2083) <protected>(<protected>): Carriage return (0x0D) is not followed by a newline (0x0A).
-# ** Warning: (vlog-2083) <protected>(<protected>): Carriage return (0x0D) is not followed by a newline (0x0A).
-# ** Warning: (vlog-2083) <protected>(<protected>): Carriage return (0x0D) is not followed by a newline (0x0A).
-# ** Warning: (vlog-2083) <protected>(<protected>): Carriage return (0x0D) is not followed by a newline (0x0A).
-# ** Warning: (vlog-2083) <protected>(<protected>): Carriage return (0x0D) is not followed by a newline (0x0A).
-# ** Warning: (vlog-2083) <protected>(<protected>): Carriage return (0x0D) is not followed by a newline (0x0A).
+# Start time: 07:52:43 on Jun 16,2025
+# vlog -reportprogress 300 -vlog01compat -work cyclonev_pcie_hip_ver c:/intelfpga_lite/18.1/quartus/eda/sim_lib/mentor/cyclonev_pcie_hip_atoms_ncrypt.v 
 # 
 # Top level modules:
-# End time: 16:20:15 on Jun 15,2025, Elapsed time: 0:00:03
-# Errors: 0, Warnings: 6
-# vlog -vlog01compat -work cyclonev_pcie_hip_ver {c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/cyclonev_pcie_hip_atoms.v}
+# End time: 07:52:46 on Jun 16,2025, Elapsed time: 0:00:03
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work cyclonev_pcie_hip_ver {c:/intelfpga_lite/18.1/quartus/eda/sim_lib/cyclonev_pcie_hip_atoms.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 16:20:16 on Jun 15,2025
-# vlog -reportprogress 300 -vlog01compat -work cyclonev_pcie_hip_ver c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/cyclonev_pcie_hip_atoms.v 
+# Start time: 07:52:46 on Jun 16,2025
+# vlog -reportprogress 300 -vlog01compat -work cyclonev_pcie_hip_ver c:/intelfpga_lite/18.1/quartus/eda/sim_lib/cyclonev_pcie_hip_atoms.v 
 # -- Compiling module cyclonev_hd_altpe2_hip_top
 # -- Compiling module arriav_hd_altpe2_hip_top
 # 
 # Top level modules:
 # 	cyclonev_hd_altpe2_hip_top
-# End time: 16:20:16 on Jun 15,2025, Elapsed time: 0:00:00
+# End time: 07:52:48 on Jun 16,2025, Elapsed time: 0:00:02
 # Errors: 0, Warnings: 0
 # 
 # if {[file exists rtl_work]} {
@@ -800,17 +784,17 @@
 # 
 # vlog -sv -work work +incdir+C:/Users/jorge/OneDrive/Documentos/GitHub/NPU_systolic_Sim {C:/Users/jorge/OneDrive/Documentos/GitHub/NPU_systolic_Sim/PE.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 16:20:17 on Jun 15,2025
+# Start time: 07:52:49 on Jun 16,2025
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/jorge/OneDrive/Documentos/GitHub/NPU_systolic_Sim" C:/Users/jorge/OneDrive/Documentos/GitHub/NPU_systolic_Sim/PE.sv 
 # -- Compiling module PE
 # 
 # Top level modules:
 # 	PE
-# End time: 16:20:17 on Jun 15,2025, Elapsed time: 0:00:00
+# End time: 07:52:49 on Jun 16,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/jorge/OneDrive/Documentos/GitHub/NPU_systolic_Sim {C:/Users/jorge/OneDrive/Documentos/GitHub/NPU_systolic_Sim/SystolicArray4x4.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 16:20:17 on Jun 15,2025
+# Start time: 07:52:49 on Jun 16,2025
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/jorge/OneDrive/Documentos/GitHub/NPU_systolic_Sim" C:/Users/jorge/OneDrive/Documentos/GitHub/NPU_systolic_Sim/SystolicArray4x4.sv 
 # -- Compiling module SystolicArray4x4
 # ** Warning: C:/Users/jorge/OneDrive/Documentos/GitHub/NPU_systolic_Sim/SystolicArray4x4.sv(13): (vlog-13314) Defaulting port 'injectA' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
@@ -818,44 +802,44 @@
 # 
 # Top level modules:
 # 	SystolicArray4x4
-# End time: 16:20:17 on Jun 15,2025, Elapsed time: 0:00:00
+# End time: 07:52:50 on Jun 16,2025, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 2
 # vlog -sv -work work +incdir+C:/Users/jorge/OneDrive/Documentos/GitHub/NPU_systolic_Sim {C:/Users/jorge/OneDrive/Documentos/GitHub/NPU_systolic_Sim/SystolicController.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 16:20:18 on Jun 15,2025
+# Start time: 07:52:50 on Jun 16,2025
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/jorge/OneDrive/Documentos/GitHub/NPU_systolic_Sim" C:/Users/jorge/OneDrive/Documentos/GitHub/NPU_systolic_Sim/SystolicController.sv 
 # -- Compiling module SystolicController
 # ** Warning: C:/Users/jorge/OneDrive/Documentos/GitHub/NPU_systolic_Sim/SystolicController.sv(17): (vlog-13314) Defaulting port 'result' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
 # 
 # Top level modules:
 # 	SystolicController
-# End time: 16:20:18 on Jun 15,2025, Elapsed time: 0:00:00
+# End time: 07:52:50 on Jun 16,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 1
 # vlog -sv -work work +incdir+C:/Users/jorge/OneDrive/Documentos/GitHub/NPU_systolic_Sim {C:/Users/jorge/OneDrive/Documentos/GitHub/NPU_systolic_Sim/top_systolic_array.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 16:20:18 on Jun 15,2025
+# Start time: 07:52:50 on Jun 16,2025
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/jorge/OneDrive/Documentos/GitHub/NPU_systolic_Sim" C:/Users/jorge/OneDrive/Documentos/GitHub/NPU_systolic_Sim/top_systolic_array.sv 
 # -- Compiling module top_systolic_array
 # 
 # Top level modules:
 # 	top_systolic_array
-# End time: 16:20:18 on Jun 15,2025, Elapsed time: 0:00:00
+# End time: 07:52:50 on Jun 16,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vlog -sv -work work +incdir+C:/Users/jorge/OneDrive/Documentos/GitHub/NPU_systolic_Sim {C:/Users/jorge/OneDrive/Documentos/GitHub/NPU_systolic_Sim/tb_top_systolic_array.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 16:20:18 on Jun 15,2025
+# Start time: 07:52:50 on Jun 16,2025
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/jorge/OneDrive/Documentos/GitHub/NPU_systolic_Sim" C:/Users/jorge/OneDrive/Documentos/GitHub/NPU_systolic_Sim/tb_top_systolic_array.sv 
 # -- Compiling module tb_top_systolic_array
 # 
 # Top level modules:
 # 	tb_top_systolic_array
-# End time: 16:20:18 on Jun 15,2025, Elapsed time: 0:00:00
+# End time: 07:52:50 on Jun 16,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs="+acc"  tb_top_systolic_array
 # vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs=""+acc"" tb_top_systolic_array 
-# Start time: 16:20:19 on Jun 15,2025
+# Start time: 07:52:50 on Jun 16,2025
 # Loading sv_std.std
 # Loading work.tb_top_systolic_array
 # Loading work.top_systolic_array
@@ -866,40 +850,47 @@
 # add wave *
 # ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
 #           File in use by: Yoshantt  Hostname: DESKTOP-VJFK62D  ProcessID: 20200
-#           Attempting to use alternate WLF file "./wlftrjic98".
+#           Attempting to use alternate WLF file "./wlft2vb64g".
 # ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
-#           Using alternate file: ./wlftrjic98
+#           Using alternate file: ./wlft2vb64g
 # view structure
 # .main_pane.structure.interior.cs.body.struct
 # view signals
 # .main_pane.objects.interior.cs.body.tree
 # run -all
 # [15000] Reset liberado
+# t=0: injectA={2,0,0,0}, injectB={1,0,0,0}
+# t=1: injectA={1,1,0,0}, injectB={2,2,0,0}
+# t=2: injectA={3,2,0,0}, injectB={1,1,1,0}
+# t=3: injectA={0,0,1,3}, injectB={0,3,3,3}
+# t=4: injectA={0,1,2,0}, injectB={0,1,0,0}
+# t=5: injectA={0,0,3,1}, injectB={0,0,2,2}
+# t=6: injectA={0,0,0,2}, injectB={0,0,0,1}
 # [175000] DONE asserted
 # 
 # --- Verificación final ---
 # 
-# ❌ ERROR en [0][0]: esperado=30, obtenido=33
-# ✅ OK    en [0][1]: 70
-# ✅ OK    en [0][2]: 110
-# ✅ OK    en [0][3]: 150
-# ✅ OK    en [1][0]: 70
-# ✅ OK    en [1][1]: 174
-# ✅ OK    en [1][2]: 278
-# ✅ OK    en [1][3]: 382
-# ✅ OK    en [2][0]: 110
-# ✅ OK    en [2][1]: 278
-# ✅ OK    en [2][2]: 446
-# ✅ OK    en [2][3]: 614
-# ✅ OK    en [3][0]: 150
-# ✅ OK    en [3][1]: 382
-# ✅ OK    en [3][2]: 614
-# ✅ OK    en [3][3]: 846
+# ✅ OK    en [0][0]: 7
+# ✅ OK    en [0][1]: 14
+# ✅ OK    en [0][2]: 5
+# ✅ OK    en [0][3]: 12
+# ✅ OK    en [1][0]: 5
+# ✅ OK    en [1][1]: 5
+# ✅ OK    en [1][2]: 9
+# ✅ OK    en [1][3]: 4
+# ✅ OK    en [2][0]: 4
+# ✅ OK    en [2][1]: 10
+# ✅ OK    en [2][2]: 9
+# ✅ OK    en [2][3]: 7
+# ✅ OK    en [3][0]: 4
+# ✅ OK    en [3][1]: 11
+# ✅ OK    en [3][2]: 7
+# ✅ OK    en [3][3]: 13
 # 
 # ✅ Simulación finalizada.
-# ** Note: $finish    : C:/Users/jorge/OneDrive/Documentos/GitHub/NPU_systolic_Sim/tb_top_systolic_array.sv(84)
+# ** Note: $finish    : C:/Users/jorge/OneDrive/Documentos/GitHub/NPU_systolic_Sim/tb_top_systolic_array.sv(83)
 #    Time: 175 ns  Iteration: 3  Instance: /tb_top_systolic_array
 # 1
-# Break in Module tb_top_systolic_array at C:/Users/jorge/OneDrive/Documentos/GitHub/NPU_systolic_Sim/tb_top_systolic_array.sv line 84
-# End time: 16:21:24 on Jun 15,2025, Elapsed time: 0:01:05
+# Break in Module tb_top_systolic_array at C:/Users/jorge/OneDrive/Documentos/GitHub/NPU_systolic_Sim/tb_top_systolic_array.sv line 83
+# End time: 07:57:17 on Jun 16,2025, Elapsed time: 0:04:27
 # Errors: 0, Warnings: 2

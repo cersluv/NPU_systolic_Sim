@@ -11,24 +11,24 @@ cModel Technology
 Z0 dC:/Users/jorge/OneDrive/Documentos/GitHub/NPU_systolic_Sim/simulation/modelsim
 vPE
 Z1 DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
-Z2 !s110 1750026017
+!s110 1750081969
 !i10b 1
-!s100 KF2Sd=N6o942o6ROKzcDS3
-Z3 !s11b Dg1SIo80bB@j0V0VzS_@n1
-IjBS]R?HR2K0<a2mb19h1Q3
-Z4 VDg1SIo80bB@j0V0VzS_@n1
+!s100 @6e6j3VdXlY8mKfX:7Hb71
+Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
+IkA2C0>^_okDJ]7YL5E2>f1
+Z3 VDg1SIo80bB@j0V0VzS_@n1
 S1
 R0
-w1750022330
+Z4 w1750081826
 8C:/Users/jorge/OneDrive/Documentos/GitHub/NPU_systolic_Sim/PE.sv
 FC:/Users/jorge/OneDrive/Documentos/GitHub/NPU_systolic_Sim/PE.sv
 !i122 0
-L0 1 52
+L0 1 61
 Z5 OV;L;2020.1;71
 r1
 !s85 0
 31
-Z6 !s108 1750026017.000000
+Z6 !s108 1750081969.000000
 !s107 C:/Users/jorge/OneDrive/Documentos/GitHub/NPU_systolic_Sim/PE.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/jorge/OneDrive/Documentos/GitHub/NPU_systolic_Sim|C:/Users/jorge/OneDrive/Documentos/GitHub/NPU_systolic_Sim/PE.sv|
 !i113 1
@@ -38,12 +38,12 @@ Z9 tCvgOpt 0
 n@p@e
 vSystolicArray4x4
 R1
-R2
+Z10 !s110 1750081970
 !i10b 1
 !s100 ohXHAX]Ck1]Taa9Rb=5f61
-R3
+R2
 IWF:1FQZOVZaiTGG2C3PzO0
-R4
+R3
 S1
 R0
 w1750022394
@@ -65,24 +65,24 @@ R9
 n@systolic@array4x4
 vSystolicController
 R1
-Z10 !s110 1750026018
+R10
 !i10b 1
-!s100 Ahf9fc_5Z0doEeaKWFoFU1
+!s100 Nh6Cb5m]T92hH0caWTPL>3
+R2
+Ij_^KEKaOEXn1OD>BjFG:z0
 R3
-IETm]fbNHjcJz?f07UGb@=3
-R4
 S1
 R0
-w1750020113
+R4
 8C:/Users/jorge/OneDrive/Documentos/GitHub/NPU_systolic_Sim/SystolicController.sv
 FC:/Users/jorge/OneDrive/Documentos/GitHub/NPU_systolic_Sim/SystolicController.sv
 !i122 2
-L0 4 90
+L0 4 107
 R5
 r1
 !s85 0
 31
-Z11 !s108 1750026018.000000
+Z11 !s108 1750081970.000000
 !s107 C:/Users/jorge/OneDrive/Documentos/GitHub/NPU_systolic_Sim/SystolicController.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/jorge/OneDrive/Documentos/GitHub/NPU_systolic_Sim|C:/Users/jorge/OneDrive/Documentos/GitHub/NPU_systolic_Sim/SystolicController.sv|
 !i113 1
@@ -94,17 +94,17 @@ vtb_top_systolic_array
 R1
 R10
 !i10b 1
-!s100 M8]zmQdf7WHhLhzzjEozW1
+!s100 HRJf8j7QaECblLkX50OB@1
+R2
+IGIfzRA[QPo8]>^_jCUmMP0
 R3
-IHY57fThA2^K`SeEXbo?kf0
-R4
 S1
 R0
-w1750025830
+R4
 8C:/Users/jorge/OneDrive/Documentos/GitHub/NPU_systolic_Sim/tb_top_systolic_array.sv
 FC:/Users/jorge/OneDrive/Documentos/GitHub/NPU_systolic_Sim/tb_top_systolic_array.sv
 !i122 4
-L0 3 85
+L0 3 84
 R5
 r1
 !s85 0
@@ -121,9 +121,9 @@ R1
 R10
 !i10b 1
 !s100 aoMH3OIf2Yb4k?n:HMHR23
-R3
+R2
 IfkOzgKh]lL01E4bJ>Z]RC0
-R4
+R3
 S1
 R0
 w1750020096

@@ -1,6 +1,5 @@
-// top_systolic_array.sv
+// top_systolic_array.sv - VERSIÓN CORREGIDA
 // Conecta el controlador y el arreglo sistólico 4x4
-
 module top_systolic_array #(
   parameter int W_A = 16,
   parameter int W_P = 32
@@ -8,6 +7,11 @@ module top_systolic_array #(
   input  logic clk,
   input  logic rst_n,
   input  logic start,
+  
+  // NUEVO: Matrices de entrada
+  input  logic signed [W_A-1:0] matrix_a [0:3][0:3],
+  input  logic signed [W_A-1:0] matrix_b [0:3][0:3],
+  
   output logic busy,
   output logic done,
   output logic signed [W_P-1:0] result [0:3][0:3]
@@ -16,7 +20,7 @@ module top_systolic_array #(
   logic signed [W_A-1:0] injectA[0:3];
   logic signed [W_A-1:0] injectB[0:3];
 
-  // Controlador
+  // Controlador - AHORA RECIBE LAS MATRICES
   SystolicController #(
     .W_A(W_A),
     .W_P(W_P)
@@ -24,6 +28,8 @@ module top_systolic_array #(
     .clk(clk),
     .rst_n(rst_n),
     .start(start),
+    .matrix_a(matrix_a),    // NUEVO: Conectar matriz A
+    .matrix_b(matrix_b),    // NUEVO: Conectar matriz B
     .busy(busy),
     .done(done),
     .injectA(injectA),
