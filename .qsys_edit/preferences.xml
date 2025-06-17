@@ -5,10 +5,11 @@
   <columns>
    <connections preferredWidth="111" />
    <irq preferredWidth="34" />
-   <name preferredWidth="280" />
+   <name preferredWidth="188" />
+   <export preferredWidth="324" />
   </columns>
  </systemtable>
  <library
-   expandedCategories="Library/Basic Functions,Library/Basic Functions/Clocks; PLLs and Resets/PLL,Library/University Program/Clock,Library/Interface Protocols/Transceiver PLL,Library/University Program,Project,Library/Basic Functions/Clocks; PLLs and Resets,Library/Interface Protocols,Library" />
+   expandedCategories="Library/Basic Functions/Bridges and Adaptors,Library/Interface Protocols,Library/Basic Functions/Simulation; Debug and Verification/Debug and Performance,Project,Library/Basic Functions/Simulation; Debug and Verification,Library/Basic Functions,Library/Basic Functions/Bridges and Adaptors/Memory Mapped,Library/Interface Protocols/Serial,Library" />
  <window width="1611" height="1040" x="448" y="140" />
 </preferences>

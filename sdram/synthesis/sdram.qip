@@ -2,8 +2,9 @@ set_global_assignment -entity "sdram" -library "sdram" -name IP_TOOL_NAME "Qsys"
 set_global_assignment -entity "sdram" -library "sdram" -name IP_TOOL_VERSION "18.1"
 set_global_assignment -entity "sdram" -library "sdram" -name IP_TOOL_ENV "Qsys"
 set_global_assignment -library "sdram" -name SOPCINFO_FILE [file join $::quartus(qip_path) "../../sdram.sopcinfo"]
-set_global_assignment -entity "sdram" -library "sdram" -name SLD_INFO "QSYS_NAME sdram HAS_SOPCINFO 1 GENERATION_ID 1750083022"
+set_global_assignment -entity "sdram" -library "sdram" -name SLD_INFO "QSYS_NAME sdram HAS_SOPCINFO 1 GENERATION_ID 1750112537"
 set_global_assignment -library "sdram" -name MISC_FILE [file join $::quartus(qip_path) "../sdram.cmp"]
+set_global_assignment -library "sdram" -name SLD_FILE [file join $::quartus(qip_path) "sdram.regmap"]
 set_global_assignment -library "sdram" -name SLD_FILE [file join $::quartus(qip_path) "sdram.debuginfo"]
 set_global_assignment -entity "sdram" -library "sdram" -name IP_TARGETED_DEVICE_FAMILY "Cyclone V"
 set_global_assignment -entity "sdram" -library "sdram" -name IP_GENERATED_DEVICE_FAMILY "{Cyclone V}"
@@ -15,7 +16,7 @@ set_global_assignment -entity "sdram" -library "sdram" -name IP_COMPONENT_DISPLA
 set_global_assignment -entity "sdram" -library "sdram" -name IP_COMPONENT_REPORT_HIERARCHY "On"
 set_global_assignment -entity "sdram" -library "sdram" -name IP_COMPONENT_INTERNAL "Off"
 set_global_assignment -entity "sdram" -library "sdram" -name IP_COMPONENT_VERSION "MS4w"
-set_global_assignment -entity "sdram" -library "sdram" -name IP_COMPONENT_PARAMETER "QVVUT19HRU5FUkFUSU9OX0lE::MTc1MDA4MzAyMg==::QXV0byBHRU5FUkFUSU9OX0lE"
+set_global_assignment -entity "sdram" -library "sdram" -name IP_COMPONENT_PARAMETER "QVVUT19HRU5FUkFUSU9OX0lE::MTc1MDExMjUzNw==::QXV0byBHRU5FUkFUSU9OX0lE"
 set_global_assignment -entity "sdram" -library "sdram" -name IP_COMPONENT_PARAMETER "QVVUT19ERVZJQ0VfRkFNSUxZ::Q3ljbG9uZSBW::QXV0byBERVZJQ0VfRkFNSUxZ"
 set_global_assignment -entity "sdram" -library "sdram" -name IP_COMPONENT_PARAMETER "QVVUT19ERVZJQ0U=::NUNTRU1BNUYzMUM2::QXV0byBERVZJQ0U="
 set_global_assignment -entity "sdram" -library "sdram" -name IP_COMPONENT_PARAMETER "QVVUT19ERVZJQ0VfU1BFRURHUkFERQ==::Ng==::QXV0byBERVZJQ0VfU1BFRURHUkFERQ=="
@@ -423,6 +424,27 @@ set_global_assignment -entity "sdram_new_sdram_controller_0" -library "sdram" -n
 set_global_assignment -entity "sdram_new_sdram_controller_0" -library "sdram" -name IP_COMPONENT_PARAMETER "c2l6ZQ==::NjcxMDg4NjQ=::c2l6ZQ=="
 set_global_assignment -entity "sdram_new_sdram_controller_0" -library "sdram" -name IP_COMPONENT_PARAMETER "YWRkcmVzc1dpZHRo::MjU=::YWRkcmVzc1dpZHRo"
 set_global_assignment -entity "sdram_new_sdram_controller_0" -library "sdram" -name IP_COMPONENT_PARAMETER "YmFua1dpZHRo::Mg==::YmFua1dpZHRo"
+set_global_assignment -entity "sdram_jtag_uart_0" -library "sdram" -name IP_COMPONENT_NAME "c2RyYW1fanRhZ191YXJ0XzA="
+set_global_assignment -entity "sdram_jtag_uart_0" -library "sdram" -name IP_COMPONENT_DISPLAY_NAME "SlRBRyBVQVJUIEludGVsIEZQR0EgSVA="
+set_global_assignment -entity "sdram_jtag_uart_0" -library "sdram" -name IP_COMPONENT_REPORT_HIERARCHY "Off"
+set_global_assignment -entity "sdram_jtag_uart_0" -library "sdram" -name IP_COMPONENT_INTERNAL "Off"
+set_global_assignment -entity "sdram_jtag_uart_0" -library "sdram" -name IP_COMPONENT_AUTHOR "SW50ZWwgQ29ycG9yYXRpb24="
+set_global_assignment -entity "sdram_jtag_uart_0" -library "sdram" -name IP_COMPONENT_VERSION "MTguMQ=="
+set_global_assignment -entity "sdram_jtag_uart_0" -library "sdram" -name IP_COMPONENT_PARAMETER "YWxsb3dNdWx0aXBsZUNvbm5lY3Rpb25z::ZmFsc2U=::QWxsb3cgbXVsdGlwbGUgY29ubmVjdGlvbnMgdG8gQXZhbG9uIEpUQUcgc2xhdmU="
+set_global_assignment -entity "sdram_jtag_uart_0" -library "sdram" -name IP_COMPONENT_PARAMETER "aHViSW5zdGFuY2VJRA==::MA==::aHViSW5zdGFuY2VJRA=="
+set_global_assignment -entity "sdram_jtag_uart_0" -library "sdram" -name IP_COMPONENT_PARAMETER "cmVhZEJ1ZmZlckRlcHRo::NjQ=::QnVmZmVyIGRlcHRoIChieXRlcyk="
+set_global_assignment -entity "sdram_jtag_uart_0" -library "sdram" -name IP_COMPONENT_PARAMETER "cmVhZElSUVRocmVzaG9sZA==::OA==::SVJRIHRocmVzaG9sZA=="
+set_global_assignment -entity "sdram_jtag_uart_0" -library "sdram" -name IP_COMPONENT_PARAMETER "c2ltSW50ZXJhY3RpdmVPcHRpb25z::Tk9fSU5URVJBQ1RJVkVfV0lORE9XUw==::T3B0aW9ucw=="
+set_global_assignment -entity "sdram_jtag_uart_0" -library "sdram" -name IP_COMPONENT_PARAMETER "dXNlUmVnaXN0ZXJzRm9yUmVhZEJ1ZmZlcg==::ZmFsc2U=::Q29uc3RydWN0IHVzaW5nIHJlZ2lzdGVycyBpbnN0ZWFkIG9mIG1lbW9yeSBibG9ja3M="
+set_global_assignment -entity "sdram_jtag_uart_0" -library "sdram" -name IP_COMPONENT_PARAMETER "dXNlUmVnaXN0ZXJzRm9yV3JpdGVCdWZmZXI=::ZmFsc2U=::Q29uc3RydWN0IHVzaW5nIHJlZ2lzdGVycyBpbnN0ZWFkIG9mIG1lbW9yeSBibG9ja3M="
+set_global_assignment -entity "sdram_jtag_uart_0" -library "sdram" -name IP_COMPONENT_PARAMETER "dXNlUmVsYXRpdmVQYXRoRm9yU2ltRmlsZQ==::ZmFsc2U=::dXNlUmVsYXRpdmVQYXRoRm9yU2ltRmlsZQ=="
+set_global_assignment -entity "sdram_jtag_uart_0" -library "sdram" -name IP_COMPONENT_PARAMETER "d3JpdGVCdWZmZXJEZXB0aA==::NjQ=::QnVmZmVyIGRlcHRoIChieXRlcyk="
+set_global_assignment -entity "sdram_jtag_uart_0" -library "sdram" -name IP_COMPONENT_PARAMETER "d3JpdGVJUlFUaHJlc2hvbGQ=::OA==::SVJRIHRocmVzaG9sZA=="
+set_global_assignment -entity "sdram_jtag_uart_0" -library "sdram" -name IP_COMPONENT_PARAMETER "Y2xrRnJlcQ==::NTAwMDAwMDA=::Y2xrRnJlcQ=="
+set_global_assignment -entity "sdram_jtag_uart_0" -library "sdram" -name IP_COMPONENT_PARAMETER "YXZhbG9uU3BlYw==::Mi4w::YXZhbG9uU3BlYw=="
+set_global_assignment -entity "sdram_jtag_uart_0" -library "sdram" -name IP_COMPONENT_PARAMETER "bGVnYWN5U2lnbmFsQWxsb3c=::ZmFsc2U=::bGVnYWN5U2lnbmFsQWxsb3c="
+set_global_assignment -entity "sdram_jtag_uart_0" -library "sdram" -name IP_COMPONENT_PARAMETER "ZW5hYmxlSW50ZXJhY3RpdmVJbnB1dA==::ZmFsc2U=::ZW5hYmxlSW50ZXJhY3RpdmVJbnB1dA=="
+set_global_assignment -entity "sdram_jtag_uart_0" -library "sdram" -name IP_COMPONENT_PARAMETER "ZW5hYmxlSW50ZXJhY3RpdmVPdXRwdXQ=::ZmFsc2U=::ZW5hYmxlSW50ZXJhY3RpdmVPdXRwdXQ="
 
 set_global_assignment -library "sdram" -name VERILOG_FILE [file join $::quartus(qip_path) "sdram.v"]
 set_global_assignment -library "sdram" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/altera_reset_controller.v"]
@@ -433,6 +455,7 @@ set_global_assignment -library "sdram" -name VERILOG_FILE [file join $::quartus(
 set_global_assignment -library "sdram" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/sdram_sys_sdram_pll_0_sys_pll.v"]
 set_global_assignment -library "sdram" -name QIP_FILE [file join $::quartus(qip_path) "submodules/sdram_sys_sdram_pll_0_sys_pll.qip"]
 set_global_assignment -library "sdram" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/sdram_new_sdram_controller_0.v"]
+set_global_assignment -library "sdram" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/sdram_jtag_uart_0.v"]
 
 set_global_assignment -entity "altera_reset_controller" -library "sdram" -name IP_TOOL_NAME "altera_reset_controller"
 set_global_assignment -entity "altera_reset_controller" -library "sdram" -name IP_TOOL_VERSION "18.1"
@@ -443,3 +466,6 @@ set_global_assignment -entity "sdram_sys_sdram_pll_0_sys_pll" -library "sdram" -
 set_global_assignment -entity "sdram_new_sdram_controller_0" -library "sdram" -name IP_TOOL_NAME "altera_avalon_new_sdram_controller"
 set_global_assignment -entity "sdram_new_sdram_controller_0" -library "sdram" -name IP_TOOL_VERSION "18.1"
 set_global_assignment -entity "sdram_new_sdram_controller_0" -library "sdram" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "sdram_jtag_uart_0" -library "sdram" -name IP_TOOL_NAME "altera_avalon_jtag_uart"
+set_global_assignment -entity "sdram_jtag_uart_0" -library "sdram" -name IP_TOOL_VERSION "18.1"
+set_global_assignment -entity "sdram_jtag_uart_0" -library "sdram" -name IP_TOOL_ENV "Qsys"

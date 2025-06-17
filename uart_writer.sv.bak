@@ -1,0 +1,38 @@
+module uart_writer (
+    input wire        clk,
+    input wire        reset_n,
+
+    output reg [2:0]  address,
+    output reg        write_n,
+    output reg        chipselect,
+    output reg [15:0] writedata,
+
+    input wire        readyfordata
+);
+
+    reg [23:0] counter;
+    reg send;
+
+    always @(posedge clk or negedge reset_n) begin
+        if (!reset_n) begin
+            counter <= 0;
+            send <= 0;
+        end else begin
+            if (counter < 24'd8_000_000) begin  // ~160ms si clk = 50 MHz
+                counter <= counter + 1;
+                send <= 0;
+            end else begin
+                counter <= 0;
+                send <= 1;
+            end
+        end
+    end
+
+    always @(*) begin
+        address     = 3'b001;            // Dirección del registro tx_data
+        chipselect  = send && readyfordata;
+        write_n     = ~(send && readyfordata);
+        writedata   = 16'h0041;          // ASCII de 'A'
+    end
+
+endmodule
