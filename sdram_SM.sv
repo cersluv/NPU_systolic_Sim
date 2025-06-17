@@ -1,6 +1,6 @@
 // sdram_SM.sv
-// SM simplificada para el controlador SDRAM
-// Maneja automaticamente las senales de control y temporizacion
+// SM simplificada para el controlador SDRAM.
+// Maneja automaticamente las señales de control y temporizacion.
 
 module sdram_SM (
     input  logic           clk,

@@ -1,7 +1,6 @@
 //------------------------------------------------------------------------------
-// Module: matrix_multiplication_system_4x4
-// Descripción: Sistema con arreglo sistólico 4x4 e interfaz SDRAM
-// VERSIÓN CORREGIDA - Pasa matrices correctamente al arreglo sistólico
+// Module: matrix_multiplication_system_4x4 con UART integrado
+// Descripción: Sistema con arreglo sistólico 4x4, interfaz SDRAM y UART
 //------------------------------------------------------------------------------
 
 module prueba (
@@ -56,7 +55,16 @@ module prueba (
     logic        operation_done;
     logic        busy;
     
-    // Señales del arreglo sistólico - CORREGIDAS
+    // Señales JTAG UART
+    logic        uart_chipselect;
+    logic        uart_address;
+    logic        uart_read_n;
+    logic [31:0] uart_readdata;
+    logic        uart_write_n;
+    logic [31:0] uart_writedata;
+    logic        uart_waitrequest;
+    
+    // Señales del arreglo sistólico
     logic signed [W_A-1:0] matrix_a_internal [0:3][0:3];
     logic signed [W_A-1:0] matrix_b_internal [0:3][0:3];
     logic signed [W_P-1:0] result_internal [0:3][0:3];
@@ -71,6 +79,7 @@ module prueba (
         LOAD_MATRIX_B,
         SYSTOLIC_COMPUTE,
         STORE_RESULTS,
+        SEND_UART_RESULTS,
         DISPLAY_RESULTS,
         IDLE
     } main_state_t;
@@ -105,7 +114,11 @@ module prueba (
     // Debug signals
     logic        matrices_initialized;
     
-    // Instanciación del controlador SDRAM
+    // Señales para control del UART
+    logic        uart_send_trigger;
+    logic        uart_sending_done;
+    
+    // Instanciación del controlador SDRAM con UART
     sdram sdram_controller (
         .clk_clk(clk_clk),
         .reset_reset_n(reset_reset_n),
@@ -118,6 +131,13 @@ module prueba (
         .sdram_readdata(sdram_readdata),
         .sdram_readdatavalid(sdram_readdatavalid),
         .sdram_waitrequest(sdram_waitrequest),
+        .jtag_uart_0_chipselect(uart_chipselect),
+        .jtag_uart_0_address(uart_address),
+        .jtag_uart_0_read_n(uart_read_n),
+        .jtag_uart_0_readdata(uart_readdata),
+        .jtag_uart_0_write_n(uart_write_n),
+        .jtag_uart_0_writedata(uart_writedata),
+        .jtag_uart_0_waitrequest(uart_waitrequest),
         .wire_addr(wire_addr),
         .wire_ba(wire_ba),
         .wire_cas_n(wire_cas_n),
@@ -151,7 +171,7 @@ module prueba (
         .sdram_waitrequest(sdram_waitrequest)
     );
     
-    // Instanciación del sistema sistólico 4x4 - CORREGIDA
+    // Instanciación del sistema sistólico 4x4
     top_systolic_array #(
         .W_A(W_A),
         .W_P(W_P)
@@ -159,11 +179,26 @@ module prueba (
         .clk(clk_clk),
         .rst_n(reset_reset_n),
         .start(systolic_start),
-        .matrix_a(matrix_a_internal),    // NUEVO: Pasar matriz A
-        .matrix_b(matrix_b_internal),    // NUEVO: Pasar matriz B
+        .matrix_a(matrix_a_internal),
+        .matrix_b(matrix_b_internal),
         .busy(systolic_busy),
         .done(systolic_done),
         .result(result_internal)
+    );
+    
+    // Instanciación del UART Writer para enviar resultados
+    uart_matrix_writer uart_writer_inst (
+        .clk(clk_clk),
+        .reset_n(reset_reset_n),
+        .start_send(uart_send_trigger),
+        .result_matrix(result_internal),
+        .done(uart_sending_done),
+        .chipselect(uart_chipselect),
+        .address(uart_address),
+        .read_n(uart_read_n),
+        .write_n(uart_write_n),
+        .writedata(uart_writedata),
+        .waitrequest(uart_waitrequest)
     );
     
     // Contador de delay para inicialización
@@ -196,7 +231,6 @@ module prueba (
             
             if (current_state == SYSTOLIC_COMPUTE && systolic_busy) begin
                 compute_cycles <= compute_cycles + 1;
-                // 4x4 = 16 MAC operations por ciclo activo, cada MAC = 2 FLOPs
                 flop_counter <= flop_counter + 32;
             end
         end
@@ -205,9 +239,6 @@ module prueba (
     // Cálculo de intensidad aritmética
     always_comb begin
         if (mem_ops_counter > 0) begin
-            // FLOPs / (Memory Operations * bytes per operation)
-            // Total FLOPs para 4x4 matrix mult = 4*4*4*2 = 128 FLOPs
-            // Total memory operations = 16+16+16 = 48 operations * 2 bytes = 96 bytes
             arithmetic_intensity = 32'd128 / (mem_ops_counter * 2);
         end else begin
             arithmetic_intensity = 32'b0;
@@ -230,7 +261,7 @@ module prueba (
         if (!reset_reset_n) begin
             display_mode <= 4'b0;
         end else if (btn2_edge && current_state == DISPLAY_RESULTS) begin
-            if (display_mode == 4'd4) begin  // 0-3 para resultados, 4 para intensidad
+            if (display_mode == 4'd4) begin
                 display_mode <= 4'b0;
             end else begin
                 display_mode <= display_mode + 1;
@@ -238,18 +269,18 @@ module prueba (
         end
     end
     
-    // INICIALIZACIÓN DE MATRICES - CORREGIDA Y MEJORADA
+    // INICIALIZACIÓN DE MATRICES
     always_ff @(posedge clk_clk or negedge reset_reset_n) begin
         if (!reset_reset_n) begin
             matrices_initialized <= 1'b0;
             
-            // Matriz A - VALORES CORRECTOS DEL TESTBENCH
+            // Matriz A
             matrix_a[0][0] <= 16'd5; matrix_a[0][1] <= 16'd1; matrix_a[0][2] <= 16'd3; matrix_a[0][3] <= 16'd0;
             matrix_a[1][0] <= 16'd1; matrix_a[1][1] <= 16'd2; matrix_a[1][2] <= 16'd0; matrix_a[1][3] <= 16'd1;
             matrix_a[2][0] <= 16'd0; matrix_a[2][1] <= 16'd1; matrix_a[2][2] <= 16'd2; matrix_a[2][3] <= 16'd3;
             matrix_a[3][0] <= 16'd3; matrix_a[3][1] <= 16'd0; matrix_a[3][2] <= 16'd1; matrix_a[3][3] <= 16'd2;
             
-            // Matriz B - VALORES CORRECTOS DEL TESTBENCH
+            // Matriz B
             matrix_b[0][0] <= 16'd2; matrix_b[0][1] <= 16'd2; matrix_b[0][2] <= 16'd1; matrix_b[0][3] <= 16'd3;
             matrix_b[1][0] <= 16'd2; matrix_b[1][1] <= 16'd1; matrix_b[1][2] <= 16'd3; matrix_b[1][3] <= 16'd0;
             matrix_b[2][0] <= 16'd1; matrix_b[2][1] <= 16'd3; matrix_b[2][2] <= 16'd0; matrix_b[2][3] <= 16'd2;
@@ -263,7 +294,6 @@ module prueba (
                 end
             end
         end else if (!matrices_initialized) begin
-            // Copiar a matrices internas en el primer ciclo después del reset
             for (int i = 0; i < 4; i++) begin
                 for (int j = 0; j < 4; j++) begin
                     matrix_a_internal[i][j] <= matrix_a[i][j];
@@ -280,6 +310,7 @@ module prueba (
             current_state <= INIT;
             matrix_index <= 5'b0;
             result_index <= 5'b0;
+            uart_send_trigger <= 1'b0;
         end else begin
             current_state <= next_state;
             
@@ -297,6 +328,14 @@ module prueba (
                         result_index <= result_index + 1;
                     end else if (operation_done && result_index == 15) begin
                         result_index <= 5'b0;
+                    end
+                end
+                
+                SEND_UART_RESULTS: begin
+                    if (!uart_send_trigger && !uart_sending_done) begin
+                        uart_send_trigger <= 1'b1;
+                    end else if (uart_send_trigger) begin
+                        uart_send_trigger <= 1'b0;
                     end
                 end
             endcase
@@ -334,12 +373,18 @@ module prueba (
             
             STORE_RESULTS: begin
                 if (operation_done && result_index == 15) begin
+                    next_state = SEND_UART_RESULTS;
+                end
+            end
+            
+            SEND_UART_RESULTS: begin
+                if (uart_sending_done) begin
                     next_state = DISPLAY_RESULTS;
                 end
             end
             
             DISPLAY_RESULTS: begin
-                next_state = DISPLAY_RESULTS;  // Permanece aquí
+                next_state = DISPLAY_RESULTS;
             end
             
             default: begin
@@ -357,7 +402,7 @@ module prueba (
         
         case (current_state)
             LOAD_MATRIX_A: begin
-                if (!busy) begin  // Solo iniciar si no está ocupado
+                if (!busy) begin
                     start_write = 1'b1;
                     address = MATRIX_A_BASE + matrix_index;
                     write_data = matrix_a[matrix_index >> 2][matrix_index & 3];
@@ -365,7 +410,7 @@ module prueba (
             end
             
             LOAD_MATRIX_B: begin
-                if (!busy) begin  // Solo iniciar si no está ocupado
+                if (!busy) begin
                     start_write = 1'b1;
                     address = MATRIX_B_BASE + matrix_index;
                     write_data = matrix_b[matrix_index >> 2][matrix_index & 3];
@@ -373,7 +418,7 @@ module prueba (
             end
             
             STORE_RESULTS: begin
-                if (!busy) begin  // Solo iniciar si no está ocupado
+                if (!busy) begin
                     start_write = 1'b1;
                     address = MATRIX_C_BASE + result_index;
                     write_data = result_internal[result_index >> 2][result_index & 3][15:0];
@@ -382,7 +427,7 @@ module prueba (
         endcase
     end
     
-    // Control del arreglo sistólico - MEJORADO
+    // Control del arreglo sistólico
     always_ff @(posedge clk_clk or negedge reset_reset_n) begin
         if (!reset_reset_n) begin
             systolic_start <= 1'b0;
@@ -393,17 +438,14 @@ module prueba (
             case (current_state)
                 SYSTOLIC_COMPUTE: begin
                     if (!systolic_start && !systolic_busy && !systolic_done) begin
-                        // Iniciar el cálculo sistólico
                         systolic_start <= 1'b1;
                     end else if (systolic_start) begin
-                        // Desactivar start después de un ciclo
                         systolic_start <= 1'b0;
                     end
                     
                     if (systolic_done) begin
-                        // Capturar resultados de la primera fila
                         for (int i = 0; i < 4; i++) begin
-                            column_results[i] <= result_internal[i][i];  // Primera fila
+                            column_results[i] <= result_internal[i][i];
                         end
                     end
                 end
@@ -446,7 +488,7 @@ module prueba (
         endcase
     endfunction
     
-    // Asignación de displays - MOSTRAR EN HEXADECIMAL
+    // Asignación de displays
     assign hex0 = hex_to_7seg(display_value[3:0]);
     assign hex1 = hex_to_7seg(display_value[7:4]);
     assign hex2 = hex_to_7seg(display_value[11:8]);
@@ -473,15 +515,20 @@ module prueba (
         
         if (systolic_done) begin
             $display("=== RESULTADO SISTÓLICO COMPLETADO ===");
-            $display("Primera fila del resultado:");
-            $display("  [%0d %0d %0d %0d]", 
-                result_internal[0][0], result_internal[0][1], 
-                result_internal[0][2], result_internal[0][3]);
+            $display("Matriz resultado completa:");
+            for (int i = 0; i < 4; i++) begin
+                $display("  [%0d]: %2d %2d %2d %2d", i, 
+                    result_internal[i][0], result_internal[i][1], 
+                    result_internal[i][2], result_internal[i][3]);
+            end
         end
         
-        if (current_state == DISPLAY_RESULTS && display_mode < 4) begin
-            $display("Display Mode %0d: Mostrando resultado[0][%0d] = %0d", 
-                display_mode, display_mode, column_results[display_mode]);
+        if (current_state == SEND_UART_RESULTS && uart_send_trigger) begin
+            $display("=== ENVIANDO RESULTADOS POR UART ===");
+        end
+        
+        if (uart_sending_done) begin
+            $display("=== ENVÍO UART COMPLETADO ===");
         end
     end
     `endif

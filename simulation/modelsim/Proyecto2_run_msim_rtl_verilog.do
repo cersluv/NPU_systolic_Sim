@@ -45,14 +45,28 @@ if {[file exists rtl_work]} {
 vlib rtl_work
 vmap work rtl_work
 
+vlib sdram
+vmap sdram sdram
+vlog -vlog01compat -work sdram +incdir+C:/Users/jorge/OneDrive/Documentos/GitHub/NPU_systolic_Sim/sdram/synthesis {C:/Users/jorge/OneDrive/Documentos/GitHub/NPU_systolic_Sim/sdram/synthesis/sdram.v}
+vlog -vlog01compat -work sdram +incdir+C:/Users/jorge/OneDrive/Documentos/GitHub/NPU_systolic_Sim/sdram/synthesis/submodules {C:/Users/jorge/OneDrive/Documentos/GitHub/NPU_systolic_Sim/sdram/synthesis/submodules/altera_reset_controller.v}
+vlog -vlog01compat -work sdram +incdir+C:/Users/jorge/OneDrive/Documentos/GitHub/NPU_systolic_Sim/sdram/synthesis/submodules {C:/Users/jorge/OneDrive/Documentos/GitHub/NPU_systolic_Sim/sdram/synthesis/submodules/altera_reset_synchronizer.v}
+vlog -vlog01compat -work sdram +incdir+C:/Users/jorge/OneDrive/Documentos/GitHub/NPU_systolic_Sim/sdram/synthesis/submodules {C:/Users/jorge/OneDrive/Documentos/GitHub/NPU_systolic_Sim/sdram/synthesis/submodules/sdram_sys_sdram_pll_0.v}
+vlog -vlog01compat -work sdram +incdir+C:/Users/jorge/OneDrive/Documentos/GitHub/NPU_systolic_Sim/sdram/synthesis/submodules {C:/Users/jorge/OneDrive/Documentos/GitHub/NPU_systolic_Sim/sdram/synthesis/submodules/altera_up_avalon_reset_from_locked_signal.v}
+vlog -vlog01compat -work sdram +incdir+C:/Users/jorge/OneDrive/Documentos/GitHub/NPU_systolic_Sim/sdram/synthesis/submodules {C:/Users/jorge/OneDrive/Documentos/GitHub/NPU_systolic_Sim/sdram/synthesis/submodules/sdram_sys_sdram_pll_0_sys_pll.v}
+vlog -vlog01compat -work sdram +incdir+C:/Users/jorge/OneDrive/Documentos/GitHub/NPU_systolic_Sim/sdram/synthesis/submodules {C:/Users/jorge/OneDrive/Documentos/GitHub/NPU_systolic_Sim/sdram/synthesis/submodules/sdram_new_sdram_controller_0.v}
+vlog -vlog01compat -work sdram +incdir+C:/Users/jorge/OneDrive/Documentos/GitHub/NPU_systolic_Sim/sdram/synthesis/submodules {C:/Users/jorge/OneDrive/Documentos/GitHub/NPU_systolic_Sim/sdram/synthesis/submodules/sdram_jtag_uart_0.v}
+vlog -sv -work work +incdir+C:/Users/jorge/OneDrive/Documentos/GitHub/NPU_systolic_Sim {C:/Users/jorge/OneDrive/Documentos/GitHub/NPU_systolic_Sim/prueba.sv}
+vlog -sv -work work +incdir+C:/Users/jorge/OneDrive/Documentos/GitHub/NPU_systolic_Sim {C:/Users/jorge/OneDrive/Documentos/GitHub/NPU_systolic_Sim/top.sv}
 vlog -sv -work work +incdir+C:/Users/jorge/OneDrive/Documentos/GitHub/NPU_systolic_Sim {C:/Users/jorge/OneDrive/Documentos/GitHub/NPU_systolic_Sim/PE.sv}
 vlog -sv -work work +incdir+C:/Users/jorge/OneDrive/Documentos/GitHub/NPU_systolic_Sim {C:/Users/jorge/OneDrive/Documentos/GitHub/NPU_systolic_Sim/SystolicArray4x4.sv}
 vlog -sv -work work +incdir+C:/Users/jorge/OneDrive/Documentos/GitHub/NPU_systolic_Sim {C:/Users/jorge/OneDrive/Documentos/GitHub/NPU_systolic_Sim/SystolicController.sv}
 vlog -sv -work work +incdir+C:/Users/jorge/OneDrive/Documentos/GitHub/NPU_systolic_Sim {C:/Users/jorge/OneDrive/Documentos/GitHub/NPU_systolic_Sim/top_systolic_array.sv}
+vlog -sv -work work +incdir+C:/Users/jorge/OneDrive/Documentos/GitHub/NPU_systolic_Sim {C:/Users/jorge/OneDrive/Documentos/GitHub/NPU_systolic_Sim/sdram_SM.sv}
+vlog -sv -work work +incdir+C:/Users/jorge/OneDrive/Documentos/GitHub/NPU_systolic_Sim/output_files {C:/Users/jorge/OneDrive/Documentos/GitHub/NPU_systolic_Sim/output_files/uart_matrix_writer.sv}
 
 vlog -sv -work work +incdir+C:/Users/jorge/OneDrive/Documentos/GitHub/NPU_systolic_Sim {C:/Users/jorge/OneDrive/Documentos/GitHub/NPU_systolic_Sim/tb_top_systolic_array.sv}
 
-vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs="+acc"  tb_top_systolic_array
+vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -L sdram -voptargs="+acc"  tb_top_systolic_array
 
 add wave *
 view structure
